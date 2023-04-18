@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/chatLay"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dp_8"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chat_item_img" />
+
+        <View
+            android:id="@+id/onlineView"
+            android:visibility="invisible"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:background="@drawable/black_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/tvNameChat"
+            style="@style/normaltxt_15sp_Medium"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:maxLength="100"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/dianne_russell"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimeChat"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/tvTimeChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_10_32"
+            style="@style/normaltxt_11sp_Regular"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNameChat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvNameChat" />
+
+        <TextView
+            android:id="@+id/tvDesChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/hello_how_can_i_help_you"
+            android:singleLine="true"
+            android:maxLength="100"
+            style="@style/normaltxt_11sp_Regular"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintEnd_toEndOf="@+id/tvNameChat"
+            app:layout_constraintStart_toStartOf="@+id/tvNameChat"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameChat" />
+
+        <TextView
+            android:id="@+id/tvCountChat"
+            style="@style/normaltxt_11sp_Regular"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:background="@drawable/black_bg"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="@string/_1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDesChat"
+            app:layout_constraintEnd_toEndOf="@+id/tvTimeChat"
+            app:layout_constraintTop_toTopOf="@+id/tvDesChat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

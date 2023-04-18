@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView100"
+                style="@style/normaltxt_24sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/cancel_booking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/selectReason"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_24"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/black"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView100">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_selectReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                    android:hint="@string/select_reason"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_16"
+                android:buttonTint="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/selectReason"
+                app:layout_constraintTop_toBottomOf="@+id/selectReason" />
+
+
+            <TextView
+                android:id="@+id/textView101"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/accept_the_cancel_booking_terms_and_condition"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="@+id/selectReason"
+                app:layout_constraintStart_toEndOf="@+id/radioButton3"
+                app:layout_constraintTop_toTopOf="@+id/radioButton3" />
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/stroke_black_common_bg"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/selectReason"
+                app:layout_constraintStart_toStartOf="@+id/selectReason"
+                app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+            <TextView
+                android:id="@+id/btnConfirm"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/common_btn_bg"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnCancel"
+                app:layout_constraintStart_toStartOf="@+id/btnCancel"
+                app:layout_constraintTop_toBottomOf="@+id/btnCancel" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

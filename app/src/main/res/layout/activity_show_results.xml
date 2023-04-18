@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.ShowResults.ShowResultsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvNameShow"
+            style="@style/normaltxt_16sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/himanshu_gupta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:padding="@dimen/dp_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameShow"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:padding="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHome"
+            app:layout_constraintEnd_toStartOf="@+id/ivHome"
+            app:layout_constraintTop_toTopOf="@+id/ivHome"
+            app:srcCompat="@drawable/filter_icon" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameShow"
+            app:srcCompat="@drawable/date_icon" />
+
+        <TextView
+            android:id="@+id/textView64"
+            style="@style/normaltxt_10sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:gravity="start"
+            android:text="@string/_21_jul_23_jul"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/textView64"
+            app:layout_constraintTop_toTopOf="@+id/imageView27"
+            app:srcCompat="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/textView65"
+            style="@style/normaltxt_10sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/_1_guest"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+            app:layout_constraintStart_toEndOf="@+id/imageView28"
+            app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="50dp"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/dark_gry_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+            app:layout_constraintStart_toEndOf="@+id/textView65"
+            app:layout_constraintTop_toTopOf="@+id/imageView28">
+
+            <TextView
+                android:id="@+id/tvEdit"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_18"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:paddingStart="@dimen/dp_4"
+                android:text="@string/edit"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivUpArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:visibility="visible"
+                android:src="@drawable/up_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvEdit"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/ivDownArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvEdit"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editLay"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/destinations"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_24"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="@string/destinations"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/checkIn"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/checkOut"
+            app:layout_constraintStart_toStartOf="@+id/destinations"
+            app:layout_constraintTop_toBottomOf="@+id/destinations">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_checkIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="@string/check_in"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/checkOut"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginStart="4dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/destinations"
+            app:layout_constraintStart_toEndOf="@+id/checkIn"
+            app:layout_constraintTop_toTopOf="@+id/checkIn">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_checkOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="@string/check_out"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/guest"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginTop="16dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/checkOut"
+            app:layout_constraintStart_toStartOf="@+id/checkIn"
+            app:layout_constraintTop_toBottomOf="@+id/checkIn">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="@string/guest_amp_rooms"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/common_btn"
+            layout="@layout/common_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guest" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFilterShow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLay" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvshow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvFilterShow" />
+
+        <TextView
+            android:id="@+id/tvMap"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:text="@string/map"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:drawableStart="@drawable/map_unchecked"
+            android:background="@drawable/common_btn_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

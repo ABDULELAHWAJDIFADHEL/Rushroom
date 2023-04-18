@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/common_lay"
+    android:background="@color/light_grey"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_16"
+        android:elevation="@dimen/dp_8"
+        android:background="@drawable/common_white_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_height="@dimen/dp_190"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/commom_img" />
+
+        <TextView
+            android:id="@+id/textView110"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="16dp"
+            android:text="@string/classic_flat_room"
+            app:layout_constraintBottom_toBottomOf="@+id/tvConfromed"
+            app:layout_constraintEnd_toStartOf="@+id/tvDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvConfromed" />
+
+        <TextView
+            android:id="@+id/tvConfromed"
+            android:layout_width="77dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/confirmed"
+            android:textColor="@color/white"
+            android:gravity="center"
+            style="@style/normaltxt_10sp_semiBold"
+            android:background="@drawable/green_bg"
+            app:layout_constraintEnd_toEndOf="@+id/imageView39"
+            app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/normaltxt_10sp_semiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dark_gry_bg"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_4"
+            android:paddingEnd="@dimen/dp_4"
+            android:text="@string/_2023_03_12"
+            app:layout_constraintBottom_toBottomOf="@+id/tvConfromed"
+            app:layout_constraintEnd_toStartOf="@+id/tvConfromed"
+            app:layout_constraintTop_toTopOf="@+id/tvConfromed" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/riyadh"
+            style="@style/normaltxt_12sp_Regular"
+            android:textColor="#1B7CED"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableStart="@drawable/location_icon"
+            app:layout_constraintEnd_toEndOf="@+id/textView110"
+            app:layout_constraintStart_toStartOf="@+id/textView110"
+            app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+        <TextView
+            android:id="@+id/textView114"
+            style="@style/normaltxt_18sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/_399"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView113"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <TextView
+            android:id="@+id/textView115"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:text="/ 4 Night"
+            android:gravity="center"
+            android:textColor="#E77D00"
+            app:layout_constraintBottom_toBottomOf="@+id/textView114"
+            app:layout_constraintStart_toEndOf="@+id/textView114"
+            app:layout_constraintTop_toTopOf="@+id/textView114" />
+
+
+        <TextView
+            android:id="@+id/tvCheckOut"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/dark_gry_bg"
+            android:drawableStart="@drawable/check_out_icon"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:text="@string/check_out"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_checkIn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCheckOut"
+            app:layout_constraintEnd_toStartOf="@+id/tvCheckOut"
+            app:layout_constraintTop_toTopOf="@+id/tvCheckOut">
+
+            <TextView
+                android:id="@+id/tvCheckIn"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/check_in_icon"
+                android:drawablePadding="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_4"
+                android:gravity="center_vertical"
+               android:paddingEnd="@dimen/dp_8"
+                android:text="@string/check_in"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

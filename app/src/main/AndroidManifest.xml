@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rush_rooms">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:name=".Managers.BaseManager.ApplicationManager"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rush_Rooms"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.PendingDetails.PendingDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PaymentConfirm.PaymentConfirmActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.BookingDetails.BookingDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Booking.BookingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ChatDetails.ChatDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Search.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Filter.FilterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ShowResults.ShowResultsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.WriteReviews.WriteReviewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Reviews.ReviewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.AddGuestRooms.AddGuestRoomActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.SelectDate.SelectDateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.BookingSelection.BookingSelectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.AllCategory.AllCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.EditProfile.EditProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Wallet.WalletActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Notification.NotificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ProfileOne.ProfileOneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ChangePassword.ChangePasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.InviteFriends.InviteFriendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.WishList.WishListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Profile.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LanguageChange.LanguageChangeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Signup.SignupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ConfirmYourEmail.ConfirmYourEmailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.LoginwithUserName.LoginWithUserNameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ConfrimYourMobile.ConfirmYourMobileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.LoginwithMobile.LoginWithMobileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Forgot.ForgotActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Successfully.SuccessfullyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.ResetPassword.ResetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.AddInfo.AddInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Login.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Welcome.WelcomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.walkThrough.TourActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".ui.Main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.Splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <!-- <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>
