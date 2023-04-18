@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                    Bob Hyden
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                    <li>
+                        <a href="manage-account.html">
+                            <span><i class="fa fa-sliders"></i></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <div class="Logo">
+            <img src="images/Logo.png" />
+        </div>
+        <ul>
+            <li class="active">
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> User Management
+                </a>
+            </li>
+
+            <li>
+                <a href="property-owner-management.html">
+                    <span><i class="fa fa-cubes"></i></span> Property Owner Management
+                </a>
+            </li>
+
+            <li>
+                <a href="booking-management.html">
+                    <span><i class="fa fa-calendar-check-o"></i></span> Booking Management
+                </a>
+            </li>
+
+            <li>
+                <a href="trancation-management.html">
+                    <span><i class="fa fa-money"></i></span> Transaction Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="fa fa-money"></i></span> Commission Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="refund-account.html">
+                    <span><i class="fa fa-credit-card"></i></span> Refund managemnet
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <span><i class="fa fa-bell-o"></i></span> Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="app-content.html">
+                    <span><i class="fa fa-font"></i></span> Manage App Content
+                </a>
+            </li>
+
+            <li>
+                <a href="review.html">
+                    <span><i class="fa fa-star"></i></span> Review & Rating
+                </a>
+            </li>
+
+            <li>
+                <a href="sub-admin-managemnet.html">
+                    <span><i class="fa fa-users"></i></span> Sub Admin Management
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="WrapperArea">
+        <div class="WrapperBox">
+            <div class="TitleBox">
+                <div class="Title">
+                    <h4>Dashboard</h4>
+                </div> 
+            </div>
+
+            <div class="Filter">
+                <div class="form-group">
+                    <label>From Date</label>
+                    <input type="date" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>To Date</label>
+                    <input type="date" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Timeframe</label>
+                    <select class="form-control">
+                        <option value="Days">Today</option>
+                        <option value="Month">This Week</option>
+                        <option value="Month">This Month</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button class="Button">Apply</button>
+                    <button class="Button Cancel"><i class="fa fa-refresh"></i></button>
+                </div>
+            </div>
+
+            <div class="OverviewArea">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-1.svg" /></span> Total Guests
+                            </p>
+                            <h5>273</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-12.svg" /></span> total property owners
+                            </p>
+                            <h5>45</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-8.svg" /></span> total property listing
+                            </p>
+                            <h5>98</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-6.svg" /></span> Live properties occupied
+                            </p>
+                            <h5>45</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-2.svg" /></span> Net Revenue for Rush Rooms
+                            </p>
+                            <h5>SAR 91,820.75</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-9.svg" /></span> Total commission
+                            </p>
+                            <h5>SAR 25,342.75</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-13.svg" /></span> total refund
+                            </p>
+                            <h5>SAR 10,532.75</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="property-owners-revenue.html">
+                            <div class="OverviewBox">
+                                <p>
+                                    <span><img src="images/Dashboard-13.svg" /></span> Total Revenue generated by Property Owners
+                                </p>
+                                <h5>SAR 10,532.75</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-2.svg"></span>
+                        <p>Total Revenue generated</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-3.svg"></span>
+                        <p>Total properties available</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-4.svg"></span>
+                        <p>Total booking</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-5.svg"></span>
+                        <p>Today's booking</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-6.svg"></span>
+                        <p>Live properties occupied</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-7.svg"></span>
+                        <p>Today's propertys getting vacated</p>
+                        <h5>300</h5>
+                    </div>
+                </div> 
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-8.svg"></span>
+                        <p>total property listing</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-9.svg"></span>
+                        <p>Total commission </p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-10.svg"></span>
+                        <p>total commission  by property owner</p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-11.svg"></span>
+                        <p>total commission  by customer </p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-13.svg"></span>
+                        <p>total refund </p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-14.svg"></span>
+                        <p>Total discount </p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-15.svg"></span>
+                        <p>Total Check-In </p>
+                        <h5>300</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="OverviewBox">
+                        <span><img src="images/Dashboard-16.svg"></span>
+                        <p>Total Check-Out </p>
+                        <h5>300</h5>
+                    </div>
+                </div>  -->
+                </div>
+            </div>
+
+            <div class="GraphicalBox"> 
+                <div class="GraphicalBody">
+                    <canvas id="UserChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript">
+        var ctx = document.getElementById("UserChart").getContext("2d");
+        var chart = new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [
+                    {
+                        label: "Total Revenue ",
+                        data: [81, 87, 98, 118, 92, 89, 83, 93, 89, 103, 112, 120],
+                        fill: false,
+                        borderColor: '#09b727',
+                        tension: 0.1
+                    },
+                    {
+                        label: "Total Comissions ",
+                        data: [41, 50, 47, 65, 76, 54, 65, 61, 71, 66, 77, 80],
+                        fill: false,
+                        borderColor: '#b2bd09',
+                        tension: 0.1
+                    },
+                    {
+                        label: "Total Refunds",
+                        data: [0, 12, 20, 30, 25, 35, 30, 45, 24, 34, 43, 40],
+                        fill: false,
+                        borderColor: '#000',
+                        tension: 0.1
+                    },
+                ],
+            },
+            options: {},
+        });
+    </script>
+
+</body>
+</html>

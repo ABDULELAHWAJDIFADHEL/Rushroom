@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                    Bob Hyden
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                      <li>
+                        <a href="manage-account.html">
+                            <span><i class="fa fa-sliders"></i></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <div class="Logo">
+            <img src="images/Logo.png" />
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> User Management
+                </a>
+            </li> 
+
+            <li>
+                <a href="property-owner-management.html">
+                    <span><i class="fa fa-cubes"></i></span> Property Owner Management
+                </a>
+            </li>
+
+            <li>
+                <a href="booking-management.html">
+                    <span><i class="fa fa-calendar-check-o"></i></span> Booking Management 
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="trancation-management.html">
+                    <span><i class="fa fa-money"></i></span> Transaction Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="fa fa-money"></i></span> Commission Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="refund-account.html">
+                    <span><i class="fa fa-credit-card"></i></span> Refund Management
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <span><i class="fa fa-bell-o"></i></span> Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="app-content.html">
+                    <span><i class="fa fa-font"></i></span> Manage App Content 
+                </a>
+            </li>  
+
+            <li>
+                <a href="review.html">
+                    <span><i class="fa fa-star"></i></span> Review & Rating
+                </a>
+            </li>
+
+            <li>
+                <a href="sub-admin-managemnet.html">
+                    <span><i class="fa fa-users"></i></span> Sub Admin Management
+                </a>
+            </li> 
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="WrapperArea">
+        <div class="WrapperBox">
+            <div class="TitleBox">
+                <div class="Title">
+                    <h4>Transaction Management</h4>
+                </div>  
+            </div>
+
+            <div class="TransactionOverview">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-2.svg"></span> Total Earning
+                            </p>
+                            <h5>SAR 191,820.75</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-9.svg"></span> Total Refund
+                            </p>
+                            <h5>SAR 1,820.75</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-13.svg"></span> Total Payout
+                            </p>
+                            <h5>SAR 72,820.75</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="OverviewBox">
+                            <p>
+                                <span><img src="images/Dashboard-9.svg"></span> Total Commision Earned
+                            </p>
+                            <h5>SAR 25,342.75</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="CommonTabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#Earning">Earning History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Refunds">Refunds Request</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Payout">Payout Request</a>
+                    </li> 
+                </ul>
+            </div> 
+
+            <div class="tab-content">
+                
+                <div class="tab-pane active" id="Earning">
+                    <div class="Small-Wrapper"> 
+                        <div class="TitleBox">
+                            <div class="Title">
+                                <h4>Earning</h4>
+                            </div>    
+                        </div>  
+                        <div class="TableList">
+                            <table style="width: 150%;">
+                                <thead>
+                                    <tr> 
+                                        <th>Booking Id</th> 
+                                        <th>Property ID</th> 
+                                        <th>Property Name</th> 
+                                        <th>Property Owner Name</th> 
+                                        <th>Property Owner Contact</th>
+                                        <th>Customer Name</th> 
+                                        <th>Contact Number</th> 
+                                        <th>Booking Date & Time</th> 
+                                        <th>Checkin Date & Time</th>
+                                        <th>Booking Amount</th>  
+                                        <th>Commision Amount</th> 
+                                        <th></th>  
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>
+                                        <td>Ankit Mittal</td>
+                                        <td>+91 9876543210</td>
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>SAR 30</td>
+                                        <td>
+                                            <a href="javascript:void(0)">
+                                                <img src="images/Download.png">
+                                            </a>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Ankit Mittal</td>
+                                        <td>+91 9876543210</td>
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>SAR 30</td>
+                                        <td>
+                                            <a href="javascript:void(0)">
+                                                <img src="images/Download.png">
+                                            </a>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td> 
+                                        <td>Ankit Mittal</td>
+                                        <td>+91 9876543210</td> 
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>SAR 30</td>
+                                        <td>
+                                            <a href="javascript:void(0)">
+                                                <img src="images/Download.png">
+                                            </a>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td> 
+                                        <td>Ankit Mittal</td>
+                                        <td>+91 9876543210</td> 
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>SAR 30</td>
+                                        <td>
+                                            <a href="javascript:void(0)">
+                                                <img src="images/Download.png">
+                                            </a>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td> 
+                                        <td>Ankit Mittal</td>
+                                        <td>+91 9876543210</td> 
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>SAR 30</td>
+                                        <td>
+                                            <a href="javascript:void(0)">
+                                                <img src="images/Download.png">
+                                            </a>
+                                        </td>    
+                                    </tr>  
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Refunds">
+                    <div class="Small-Wrapper"> 
+                        <div class="TitleBox">
+                            <div class="Title">
+                                <h4>Refunds</h4>
+                            </div>    
+                        </div> 
+
+                        <div class="TableList">
+                            <table style="width: 125%;">
+                                <thead>
+                                    <tr> 
+                                        <th>Booking Id</th> 
+                                        <th>Property ID</th> 
+                                        <th>Property Name</th> 
+                                        <th>Customer Name</th> 
+                                        <th>Contact Number</th> 
+                                        <th>Booking Date & Time</th> 
+                                        <th>Cancelled Date & Time</th>
+                                        <th>Refund Amount</th> 
+                                        <th></th>  
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Refunded</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                                <a class="Green" data-toggle="modal" data-target="#RefundEdit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Refunded</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                                <a class="Green" data-toggle="modal" data-target="#RefundEdit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Refunded</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                                <a class="Green" data-toggle="modal" data-target="#RefundEdit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Refunded</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                                <a class="Green" data-toggle="modal" data-target="#RefundEdit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>  
+                                        <td>
+                                            <aside>
+                                                <span class="Icon">
+                                                    <img src="images/Property-2.png">
+                                                </span>
+                                                <strong>Sandy Hills</strong> 
+                                            </aside>
+                                        </td>  
+                                        <td>Zachary Parker</td>  
+                                        <td>+96651400576516</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>10:40 AM, <br> 2023/03/12</td>  
+                                        <td>SAR 302.00</td>  
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Refunded</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                                <a class="Green" data-toggle="modal" data-target="#RefundEdit">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>  
+                                </tbody>
+                            </table>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Payout">
+                    <div class="Small-Wrapper"> 
+                        <div class="TitleBox">
+                            <div class="Title">
+                                <h4>Payout</h4>
+                            </div>    
+                        </div> 
+
+                        <div class="TableList">
+                            <table>
+                                <thead>
+                                    <tr> 
+                                        <th>transaction ID</th>
+                                        <th>Booking ID</th>
+                                        <th>Property Owner Name</th>  
+                                        <th>Bank Name</th> 
+                                        <th>Account Number</th>  
+                                        <th>Payout Date & Time</th>  
+                                        <th>Payout Amount</th> 
+                                        <th></th>  
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>219300100</td>  
+                                        <td>219300100</td>
+                                        <td>Zachary Parker  </td>
+                                        <td>ABC Bank</td>  
+                                        <td>0215483225662</td>  
+                                        <td>10:40 AM, 2023/03/12</td>  
+                                        <td>SAR 302.00</td>    
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Paid</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr> 
+                                    <tr>
+                                        <td>219300100</td> 
+
+                                        <td>219300100</td>
+                                        <td>Zachary Parker  </td> 
+                                        <td>ABC Bank</td>  
+                                        <td>0215483225662</td>  
+                                        <td>10:40 AM, 2023/03/12</td>  
+                                        <td>SAR 302.00</td>    
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Paid</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr> 
+                                    <tr>
+                                        <td>219300100</td> 
+
+                                        <td>219300100</td>
+                                        <td>Zachary Parker  </td> 
+                                        <td>ABC Bank</td>  
+                                        <td>0215483225662</td>  
+                                        <td>10:40 AM, 2023/03/12</td>  
+                                        <td>SAR 302.00</td>    
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Paid</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr> 
+                                    <tr>
+                                        <td>219300100</td> 
+
+                                        <td>219300100</td>
+                                        <td>Zachary Parker  </td> 
+                                        <td>ABC Bank</td>  
+                                        <td>0215483225662</td>  
+                                        <td>10:40 AM, 2023/03/12</td>  
+                                        <td>SAR 302.00</td>    
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Paid</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr> 
+                                    <tr>
+                                        <td>219300100</td> 
+
+                                        <td>219300100</td>
+                                        <td>Zachary Parker  </td> 
+                                        <td>ABC Bank</td>  
+                                        <td>0215483225662</td>  
+                                        <td>10:40 AM, 2023/03/12</td>  
+                                        <td>SAR 302.00</td>    
+                                        <td>
+                                            <div class="Actions">
+                                                <button class="Login">Mark as Paid</button>
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/Download.png">
+                                                </a>
+                                            </div>
+                                        </td>    
+                                    </tr>  
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+
+            </div> 
+        </div> 
+    </div>
+
+    <div class="ModalBox">  
+        <div id="RefundEdit" class="modal fade" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Category">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Refund</h3>  
+
+                            <div class="form-group">  
+                                <label>Refund Amount</label>
+                                <input type="text" class="form-control" placeholder="Enter" value="SAR 302.00">
+                            </div>  
+   
+ 
+                            <button class="Button">Update</button>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

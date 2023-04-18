@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                    Bob Hyden
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                      <li>
+                        <a href="manage-account.html">
+                            <span><i class="fa fa-sliders"></i></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <div class="Logo">
+            <img src="images/Logo.png" />
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span> Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> User Management
+                </a>
+            </li>
+
+            
+
+            <li>
+                <a href="property-owner-management.html">
+                    <span><i class="fa fa-cubes"></i></span> Property Owner Management
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="booking-management.html">
+                    <span><i class="fa fa-calendar-check-o"></i></span> Booking Management 
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="trancation-management.html">
+                    <span><i class="fa fa-money"></i></span> Transaction Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="fa fa-money"></i></span> Commission Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="refund-account.html">
+                    <span><i class="fa fa-credit-card"></i></span> Refund Management
+                </a>
+            </li>
+
+             
+
+            <li>
+                <a href="notifications.html">
+                    <span><i class="fa fa-bell-o"></i></span> Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="app-content.html">
+                    <span><i class="fa fa-font"></i></span> Manage App Content 
+                </a>
+            </li>  
+
+            <li>
+                <a href="review.html">
+                    <span><i class="fa fa-star"></i></span> Review & Rating
+                </a>
+            </li>
+
+            <li>
+                <a href="sub-admin-managemnet.html">
+                    <span><i class="fa fa-users"></i></span> Sub Admin Management
+                </a>
+            </li>
+
+             
+
+             
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="WrapperArea">
+        <div class="WrapperBox">
+            <div class="Small-Wrapper">
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h4>User Management</h4>
+                    </div>
+                    <div class="TitleLink"> 
+                        <a data-toggle="modal" data-target="#UserAdd">Add User</a>
+                    </div>
+                </div>
+
+                <div class="Filter">
+                    <div class="form-group">
+                        <label>Search </label>
+                        <input type="text" class="form-control" placeholder="Search" />
+                    </div>
+                    <div class="form-group">
+                        <label>From Date</label>
+                        <input type="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>To Date</label>
+                        <input type="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Status </label>
+                        <select class="form-control">
+                            <option>Today</option>
+                            <option>Active</option>
+                            <option>Inactive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button class="Button">Apply</button>
+                        <button class="Button Cancel"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div> 
+
+                <div class="TableList">
+                    <table style="width:130%">
+                        <thead>
+                            <th>S.No</th>
+                            <th>Cust ID</th>
+                            <th>User Name</th>
+                            <th>profile picture</th>
+                            <th>Name</th>
+                            <th>Phone no</th>
+                            <th>E-mail address</th>
+                            <th>Date of birth</th>
+                            <th>Gender</th>
+                            <th>Registration date</th>
+                            <th>National ID verification</th>
+                            <th>Status</th>
+                            <th>Block/Unblock</th> 
+                            <th>Action</th> 
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-1.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+                                <td><span class="Green">Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-2.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-3.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-4.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-1.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-2.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-3.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+
+                                <td><span class="Red" data-toggle="modal" data-target="#VerifiyUser">Not Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-4.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+                                <td><span class="Green">Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-1.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+                                <td><span class="Green">Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>CUS987</td>
+                                <td>Ankit987</td>
+                                <td><figure><img src="images/Avatar-2.png"></figure></td>
+                                <td>Ankit Patel</td>
+                                <td>9876543210</td> 
+                                <td>ankit@mailinator.com</td>
+                                <td>25/08/90</td>
+                                <td>Male</td>
+                                <td>27/02/2023</td>
+                                <td><span class="Green">Verified</span></td>
+                                <td><span class="Green">Active</span></td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="Actions"> 
+                                        <a class="Blue" href="user-details.html">
+                                            <i class="fa fa-eye"></i>
+                                        </a> 
+                                        <a class="Green" data-toggle="modal" data-target="#UserEdit">
+                                            <i class="fa fa-pencil"></i>
+                                        </a> 
+                                        <a class="Red" data-toggle="modal" data-target="#UserDelete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="ModalBox">
+        <div id="UserDelete" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Delete</h3>
+                            <p>Are you sure you want to delete this User ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+
+        <div id="VerifiyUser" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Verified</h3>
+                            <p>Are you sure you want to Verify this User ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        <div id="UserAdd" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Category">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Add User</h3>   
+                         
+                            <div class="form-group">  
+                                <label>Customer Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Customer Name">
+                            </div> 
+                         
+                            <div class="form-group">  
+                                <label>Customer Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Customer Email">
+                            </div> 
+                         
+                            <div class="form-group">  
+                                <label>Customer Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Customer Mobile">
+                            </div> 
+                         
+                            <div class="form-group">  
+                                <label>Customer Image</label>
+                                <input type="file" class="form-control">
+                            </div> 
+
+                            <div class="form-group"> 
+                                <p>Password will be sent via email.</p>
+                            </div>  
+ 
+                            <button class="Button">Add User</button>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+        <div id="UserEdit" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Category">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Edit User</h3>   
+                         
+                            <div class="form-group">  
+                                <label>Customer Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Customer Name">
+                            </div> 
+                         
+                            <div class="form-group">  
+                                <label>Customer Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Customer Email">
+                            </div> 
+                         
+                            <div class="form-group">  
+                                <label>Customer Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Customer Mobile">
+                            </div>  
+                         
+                            <div class="form-group">  
+                                <label>Customer Image</label>
+                                <input type="file" class="form-control">
+                            </div>   
+ 
+                            <button class="Button">Update</button>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                    Bob Hyden
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                      <li>
+                        <a href="manage-account.html">
+                            <span><i class="fa fa-sliders"></i></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <div class="Logo">
+            <img src="images/Logo.png" />
+        </div>
+        <ul>
+            <li class="active">
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> User Management
+                </a>
+            </li>
+
+            
+
+            <li>
+                <a href="property-owner-management.html">
+                    <span><i class="fa fa-cubes"></i></span> Property Owner Management
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="booking-management.html">
+                    <span><i class="fa fa-calendar-check-o"></i></span> Booking Management 
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="trancation-management.html">
+                    <span><i class="fa fa-money"></i></span> Transaction Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="fa fa-money"></i></span> Commission Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="refund-account.html">
+                    <span><i class="fa fa-credit-card"></i></span> Refund Management
+                </a>
+            </li>
+
+             
+
+            <li>
+                <a href="notifications.html">
+                    <span><i class="fa fa-bell-o"></i></span> Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="app-content.html">
+                    <span><i class="fa fa-font"></i></span> Manage App Content 
+                </a>
+            </li>  
+
+            <li>
+                <a href="review.html">
+                    <span><i class="fa fa-star"></i></span> Review & Rating
+                </a>
+            </li>
+
+            <li>
+                <a href="sub-admin-managemnet.html">
+                    <span><i class="fa fa-users"></i></span> Sub Admin Management
+                </a>
+            </li>
+
+             
+
+             
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+     <div class="WrapperArea">
+        <div class="WrapperBox">
+
+            <div class="TitleBox">
+                <div class="Title">
+                    <h4>Growth Chart</h4>
+                </div> 
+            </div> 
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Customers</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="UserChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Revenue </p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="DriverChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>properties available</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="PayoutsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Total booking</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="ProfitsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Live properties occupied</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="PendingcashChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Cancelled Bookings</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="CancelledBookChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="GraphicalBox">
+                        <div class="GraphicalHead">
+                            <p>Cancelled Trip</p>
+                            <select>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>This Month</option>
+                                <option>This Year</option>
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="GraphicalBody">
+                            <canvas id="CancelledTripChart"></canvas>
+                        </div>
+                    </div>
+                </div> -->  
+            </div> 
+         
+        </div> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('UserChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Customers',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('DriverChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('PayoutsChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Properties ',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('ProfitsChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Booking',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('PendingcashChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Live Properties',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('CancelledBookChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Cancelled Bookings',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+    <script type="text/javascript"> 
+        var ctx = document.getElementById('CancelledTripChart').getContext('2d');
+        var chart = new Chart(ctx, { 
+            type: 'line', 
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July',],
+                datasets: [{
+                    label: 'Cancelled Trip',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                  }]
+            }, 
+            options: {}
+        }); 
+    </script>
+
+</body>
+</html>

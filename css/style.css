@@ -1,0 +1,670 @@
+@charset "utf-8";
+
+@import url('bootstrap.min.css'); 
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 13px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clr,
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+aside,
+article,
+section,
+detail,
+nav,
+figure {
+    position: relative; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+img {
+    border: 0;
+    outline: none;
+    max-width: 100%; 
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+input[type="button"] {
+    max-width: 100%;
+}
+
+table {  width: 100%; }
+p { margin: 0; padding: 0; }
+.fltL { float: left; }
+.fltR { float: right; }
+.padding_none { padding: 0 !important;}
+.border_none{border:none !important}
+.navbar-toggle {  background-color: #fff !important; }
+.icon-bar { background-color: #000 !important; }
+.p_right0{ padding-right:0px !important }
+.p_left0{ padding-left:0px !important } 
+.m_bottom0{margin-bottom: 0 !important;}
+
+input[type="date"] {text-transform: uppercase !important;}
+
+.Green{ color: #37a713; }
+.Red{ color: #e21818; }
+.Blue{ color: #139bbf; }
+.Yellow{color: #edbd08;}
+.Pink{color: #fd546d;}
+.Orange{color: #e99c3d;}
+
+.Button{border:none;padding: 10px 30px;text-align: center;transition:0.5s all ease-in-out;font-weight: 700;display: inline-block;position:relative;background-color: #000000;font-size:15px;color:#fff;text-transform:capitalize;border-radius: 7px;outline: 0;box-shadow: none;}
+.Button:hover{background-position: 0px 80px;color: #fff;}
+.Button.Cancel{background: #d9d9d9;color: #000;margin: 0 0 0 0;padding: 10px 20px;}
+
+.switch{position:relative;display:inline-block;cursor:pointer;margin:0;padding:2px 0 3px 50px;font-weight:400;font-size:12px;color:#646467;float: right;}
+.switch input{opacity:0;width:0;height:0}
+.switch .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#fff;-webkit-transition:0.4s;transition:0.4s;height: 21px;border-radius:50px;width:40px;border: 1px solid #000000;min-width: auto;}
+.switch .slider:before{position:absolute;content:"";height:13px;width:13px;left:3px;bottom:0;top:0;background-color: #000000;-webkit-transition:0.4s;transition:0.4s;border-radius:50%;margin:auto;}
+.switch input:checked+.slider{background-color: #000000;}
+.switch input:checked+.slider:before{-webkit-transform:translateX(19px);transform:translateX(19px);background:#fff}
+
+.CheckBox{display: inline-block;position:relative;padding-left:33px;cursor:pointer;font-size: 14px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight: 600 !important;color:#2d2d2d;margin: 0 !important;min-height: 20px;}
+.CheckBox input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}
+.CheckBox .checkmark{position:absolute;top:0;left:0;height: 20px;width: 24px;background-color:transparent;border: 1px solid #00a6b6;border-radius:2px;min-width: auto;}
+.CheckBox:hover input~.checkmark{background: #00a6b6;border-color: #00a6b6;}
+.CheckBox input:checked~.checkmark{background: #00a6b6;}
+.CheckBox .checkmark:after{content:"";position:absolute;display:none;left:8px;top:2px;width:5px;height:11px;border:solid white;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.CheckBox input:checked~.checkmark:after{display:block}
+
+.Radio{display:block;position:relative;padding-left: 30px;cursor:pointer;font-size: 17px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin: 0 !important;font-weight: 700;}
+.Radio input{position:absolute;opacity:0;cursor:pointer}
+.Radio .checkmark{position:absolute;top: 2px;left:0;height: 20px;width: 20px;background-color: #fff;border-radius:50%;border: 1px solid #000000;}
+.Radio:hover input~.checkmark{border-color: #000;background-color: #000;}   
+.Radio input:checked~.checkmark{border-color: #000;background-color: #000;}
+.Radio .checkmark:after{content:"";position:absolute;display:none}
+.Radio input:checked~.checkmark:after{display:block}
+.Radio .checkmark:after{width: 10px;height: 10px;border-radius:50%;background:#fff;top:0;left:0;bottom:0;right:0;margin:auto}
+
+.LoginArea{min-height: 100vh;/* background: #c9c9c9;*/background: #e1d3d3;display: flex;align-items: center;position: relative;}
+.LoginArea:before{content: '';background-image: url('../images/Layer.png');position: absolute;width: 100%;height: 100%;background-size: cover;display: none;}
+.LoginArea .LoginImage{position: absolute;right: 0;bottom: 0;width: 65%;}
+.LoginArea .LoginImage img{ width:100% }
+.LoginArea .LoginBox{background-color: #fff;border-radius: 10px;max-width: 600px;text-align: center;padding: 50px;width: 100%;z-index: 9;margin: 0 0 0 150px;box-shadow: 0px 0px 20px #928c8c;}
+.LoginArea .LoginBox .Logo{width: 110px;margin: 0px auto 20px;background-color: #fff;border-radius: 10px;}
+.LoginArea .LoginBox h3{ font-size: 24px;margin: 0 0 10px 0;font-weight: 700;color: #000;text-align: center;}
+.LoginArea .LoginBox p{font-size: 15px;font-weight: 600;text-align: center;line-height: 24px;}
+.LoginArea .LoginBox form{ margin-top:20px } 
+.LoginArea .LoginBox form .form-group{margin:0 0 20px 0; position: relative;}
+.LoginArea .LoginBox form .form-group label{display:block;color:#000;font-size:15px;font-weight:600;text-align: left;}
+.LoginArea .LoginBox form .form-group label a{float:right}
+.LoginArea .LoginBox form .form-group .form-control{box-shadow:none;border: 2px solid #ddd;padding: 12px 15px;height:auto;border-radius:5px;font-size:15px;color:#000}
+.LoginArea .LoginBox form .form-group .form-control:focus{border-color: #000;}
+.LoginArea .LoginBox form .form-group .Checkboxs{display:flex;justify-content:space-between;align-items:center}
+.LoginArea .LoginBox form .form-group .Checkboxs a{color: #434343;text-transform:capitalize;font-weight:600;font-size:15px;text-decoration: underline;}
+.LoginArea .LoginBox form .form-group .OTPBox{display:flex;justify-content:space-between;margin: 0 0 10px 0;}
+.LoginArea .LoginBox form .form-group .OTPBox .form-control{padding:0;text-align:center;width:60px;height:55px;font-size:22px;font-weight:600;color:#000;line-height:30px}
+.LoginArea .LoginBox form .form-group .Icon {position: absolute;top: 42px;right: 15px;}
+.LoginArea .LoginBox form .Button{display:block;text-transform: uppercase;letter-spacing: 1px;}
+
+.SuccessBox{background-color:#fff;min-width:525px;text-align:center;padding:60px 50px;border-radius:20px; margin: 0 0 0 150px}
+.SuccessBox span{width:100px;display:block;margin:0 auto 10px}
+.SuccessBox h3{font-size:36px;font-weight:800;margin:0 0 10px 0;color:#000}
+.SuccessBox p{font-size:15px;font-weight:600;margin:0 0 20px 0}
+.SuccessBox a{display:inline-block;padding:12px 30px;background: #00a6b6;border-radius:5px;color:#fff;font-size:16px;font-weight:600}
+
+.Header{box-shadow:0 2px 4px rgba(0,0,0,.08);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.08);position:fixed;width: calc(100% - 235px);left: 235px;top:0;z-index:99;background-color: #000;}
+.Header .Logo{width:235px;text-align:center;padding: 14px 0;float:left;height:60px;box-shadow:0 2px 4pxrgba(0,0,0,.08);background-color: #fff;}
+.Header .Logo img{width: 140px;}
+.Header .Navigation{transition:all 0.2s ease;padding: 0px 3.2rem;width: 100%;text-align:right;height:60px;display: flex;align-items: center;justify-content: end;}
+.Header .Navigation .Bell{display: inline-block;}
+.Header .Navigation .Bell a{color: #fff;font-size: 23px;}
+.Header .Navigation .Avater{margin: 0px 0 0px 30px;position:relative;display:inline-block;}
+.Header .Navigation .Avater a{display:flex;align-items:center;font-size: 15px;color: #fff;padding: 10px 0;font-weight: 600;}
+.Header .Navigation .Avater a figure{width: 40px;border-radius:50%;margin:0 15px 0 0;overflow:hidden;height: 40px;border: 2px solid #fff;}
+.Header .Navigation .Avater ul{position: absolute;background: #fff;box-shadow: 0 3px 11px 0 rgb(0 0 0 / 10%);-webkit-transform: perspective(600px) rotateX(-90deg);transform: perspective(600px) rotateX(-90deg);-webkit-transform-origin: 0 0 0;transform-origin: 0 0 0;right: 0;opacity: 0;visibility: hidden;-webkit-transition: 0.5s;transition: 0.5s;z-index: 99;top: 100%;text-align: left;min-width: 200px;display: block;width: auto;}
+.Header .Navigation .Avater ul li{margin:0;border-bottom:1px solid #d2d3d4}
+.Header .Navigation .Avater ul li:first-child{background: #000;position:relative;padding:15px 10px 15px 60px;text-align:left;border: 2px solid #fff;}
+.Header .Navigation .Avater ul li figure{width:35px;height:35px;border-radius:50%;position:absolute;top:15px;left:15px;border:2px solid #fff;overflow:hidden;margin: 0;}
+.Header .Navigation .Avater ul li h4{color:#fff;font-size:17px;line-height:18px}
+.Header .Navigation .Avater ul li h4 span{font-size:11px;font-weight:400;display: block;}
+.Header .Navigation .Avater ul li a{color:#4e4e4e;padding:10px 20px;font-weight:400;transition:0.5s all ease-in-out}
+.Header .Navigation .Avater ul li a span{margin:0 10px 0 0}
+.Header .Navigation .Avater ul li a:hover{background-color: #00a6b6;color:#fff;}
+.Header .Navigation .Avater:hover ul{opacity: 1;visibility: visible; transform: perspective(600px) rotateX(0deg);}
+ 
+.SidenavBar{position:fixed;width:235px;top: 0;padding:0;}
+.SidenavBar .Logo{padding: 20px 0; background-color: #ffffff;border-bottom: 1px solid #ddd;margin: 0;}
+.SidenavBar .Logo img{width: 115px; margin: auto;display: block;}
+.SidenavBar ul::-webkit-scrollbar-track{background:#bbb;border-radius:0}
+.SidenavBar ul::-webkit-scrollbar-thumb{background-color: #000000;border-radius:0;transition:background-color 0.2s linear,width 0.2s ease-in-out;-webkit-transition:background-color 0.2s linear,width 0.2s ease-in-out;}
+.SidenavBar ul::-webkit-scrollbar{width:7px;border-radius:0}
+.SidenavBar ul{margin:0;height: calc(100vh - 155px);overflow: auto;}
+.SidenavBar ul li{margin:0}
+.SidenavBar ul li a{display:block;cursor:pointer;padding:13px 20px 13px 45px;transition:0.5s all ease-in-out;color:#484848;font-family:"Roboto";font-size:14px;text-transform:capitalize;position:relative;border-bottom:1px solid #ddd;}
+.SidenavBar ul li a span{font-size:15px;display:inline-block;position:absolute;top:13px;left:20px}
+.SidenavBar ul li.active a,
+.SidenavBar ul li a:hover{background-color: #000000;color: #fff !important;}
+.SidenavBar ul li a.dropdown-toggle:after{content: '\f107';font-family: FontAwesome;position: absolute;top: 18px;right: 10px;font-size: 15px;border: none;font-weight: 700;line-height: 10px;}
+.SidenavBar ul li ol{ position: relative !important; float: none; transform: inherit !important; border: none; margin: 0; padding: 0;}
+.SidenavBar ul li.active ol{ display: block; }
+.SidenavBar ul li.active ol li a{ background: transparent; color: #000 !important;}
+.SidenavBar ul li.active ol li a:hover{ color: #f98c1c !important;}
+
+.WrapperArea{margin-left:235px;flex:1 1 auto;width:calc(100% - 235px);display:flex;flex-direction:column;margin-top:60px;transition:0.5s all ease-in-out}
+.WrapperArea .WrapperBox{padding: 20px;background-color:#efefef;min-height:calc(100vh - 60px);position: relative;}
+.Small-Wrapper{background-color:#fff;padding:25px;border:1px solid #dcdcdc;border-radius: 10px;}
+.Small-Wrapper+.Small-Wrapper{ margin-top: 20px; }
+
+.Filter{display: flex;}
+.Filter .form-group{margin: 0 10px 20px 0;display: inline-block;}
+.Filter .form-group:last-child{margin:0 0 20px 0}
+.Filter .form-group label{display:block;font-weight: 600;font-size:15px;color: #000;}
+.Filter .form-group .form-control{height:42px;line-height: 25px;padding:8px 10px;border: 1px solid #cbcaca;font-size: 14px;margin:0 10px 0 0;box-shadow:none;color: #3e3d3d;font-weight: 600;border-radius: 5px;}
+
+.TitleBox{display: flex;align-items: center;justify-content: space-between;margin: 0 0 15px 0;}
+.TitleBox .Title h4 {margin: 0;font-weight: 700;text-transform:capitalize;font-size: 20px;color: #000000;}
+.TitleBox .TitleLink a{background-color: #00a6b6;color:#fff;font-size: 14px;font-weight: 600;padding: 10px 20px;border-radius: 5px;display: inline-block;margin: 0 0 0 10px;}
+.TitleBox .TitleLink a i{ margin:0 5px 0 0 }
+.TitleBox .TitleLink a:hover{background-color: #000000;color: #fff;}
+
+.TableList{ overflow: auto; } 
+.TableList table{border:1px solid #dcdcdc}
+.TableList table tr:nth-child(odd){background-color:#f5f2f2}
+.TableList table tr:hover{background:#c7c7c7}
+.TableList table tr th{background-color:#dcdcdc;font-weight: 700;text-transform:capitalize;color:#000;font-size:14px;padding: 13px 15px;}
+.TableList table tr td{font-weight: 600;color:#404040;padding: 13px 15px;font-size: 14px;}
+.TableList table tr td strong{font-weight: 700;color: #000;}
+.TableList table tr td a:hover{color:#000}
+.TableList table tr td figure{width: 60px;height: 60px;border: 2px solid #fff;border-radius: 50%;box-shadow: 0px 0px 14px #dbdbdb;overflow: hidden;margin: 0 auto;}
+.TableList table tr th:last-child,
+.TableList table tr td:last-child{ min-width:105px}
+.TableList table tr td:last-child a{color:#545454;margin:0 5px;font-size:14px;display:inline-block}
+.TableList table tr td:last-child a:hover{color:#000}
+.TableList table tr td span{padding: 7px 10px;color:#fff;border-radius:5px;width:auto;display: inline-block;text-align:center;font-size: 13px;min-width: 100px;}
+.TableList table tr td .Actions{display: flex;align-items: center;justify-content: center;}
+.TableList table tr td .Actions a.Resend{padding: 5px 15px;color: #fff;border-radius: 5px;width: auto;display: block;text-align: center;font-size: 13px;background-color: #00a6b6;}
+.TableList table tr td .Actions .Login{background-color: #15a6c7;margin: 0 15px 0 0;color: #fff;padding: 8px 30px;border-radius: 5px;font-weight: 700;border: none;outline: 0;}
+.TableList table tr td aside{display: flex;align-items: center;}
+.TableList table tr td aside .Icon{padding: 0;width: 50px;height: 50px;border-radius: 50%;overflow: hidden;min-width: auto;}
+.TableList table tr td aside .Icon img{ width:100%; height:100%  }
+.TableList table tr td aside strong{width: calc(100% - 50px);padding: 0 0 0 10px;}
+
+.TableList table tr td a.Green{ color: #37a713; }
+.TableList table tr td a.Red{ color: #e21818; }
+.TableList table tr td a.Blue{ color: #139bbf; }
+.TableList table tr td a.Yellow{ color: #feca05; }
+.TableList table tr td a.Pink{color: #fd546d;}
+
+.TableList table tr td span.Green{ background-color: #37a713; }
+.TableList table tr td span.Blue{ background-color: #139bbf; }
+.TableList table tr td span.Red{ background-color: #bb0f0f; }
+.TableList table tr td span.Orange{background-color: #df9919; }
+
+.CommonTabs .nav-tabs{border:none;margin: 0 0 15px 0;}
+.CommonTabs .nav-tabs li{margin:0 15px 0 0}
+.CommonTabs .nav-tabs li a{background-color: #d0cece;border-radius: 5px;padding: 10px 35px;border: none;color:#000;font-weight: 600;cursor:pointer;text-transform:capitalize;margin:0;font-size: 15px;display: inline-block;}
+.CommonTabs .nav-tabs li a.active{background-color: #00a6b6;color:#fff;}
+
+/*.OverviewBox{border:1px solid #ddd;border-left:5px solid #ddd;padding:20px 20px 20px 100px;border-radius:10px;position:relative;margin:0 0 30px 0}
+.OverviewBox span{position:absolute;left:20px;top:20px;background-color:#ddd;width:50px;height:50px;border-radius:50px;text-align:center;font-size:23px;line-height:50px}
+.OverviewBox span img{ width:30px }
+.OverviewBox p{font-size:16px;color:#828282;font-weight:600;margin:0 0 5px 0}
+.OverviewBox h5{font-size:36px;font-weight:800;color:#000}.OverviewArea .col-sm-4:nth-last-child(-n+2) 
+.OverviewBox{margin:0}
+*/
+
+.OverviewBox{border: 1px solid #000;padding: 20px;position:relative;margin:0 0 30px 0;background-color: #fff;border-radius: 5px;}
+.OverviewBox span{position:absolute;left: 0;top: 0;background-color:#ddd;width: 35px;height: 35px;border-radius:50px;text-align:center;font-size:23px;line-height: 30px;}
+.OverviewBox span img{width: 22px;}
+.OverviewBox p{font-size:16px;margin: 0 0 45px 0;position: relative;padding: 3px 0 0 50px;min-height: 55px;text-transform: capitalize;color: #000;font-weight: 700;}
+.OverviewBox h5{font-size:36px;font-weight:800;color:#000}
+
+.UserBox{background-color:#efefef;padding:20px;border-radius:10px;border:1px solid #ddd;margin:0 0 20px 0}
+.UserBox:last-child{margin:0}
+.UserBox .UserHead{display:flex;margin:0 0 20px 0}
+.UserBox .UserHead figure{width:50px;margin:0 15px 0 0}
+.UserBox .UserHead figcaption{width:calc(100% - 65px);display:flex;justify-content:space-between}
+.UserBox .UserHead figcaption h5{font-size:15px;font-weight:700;color:#000;margin:0 0 10px 0}
+.UserBox .UserHead figcaption h3{font-weight:700;font-size:18px;margin:0 0 5px 0}
+.UserBox .UserHead figcaption h3 span{font-size:15px;padding:0 0 0 20px;position:relative;margin:0 0 0 10px}
+.UserBox .UserHead figcaption h3 span:before{content:'';position:absolute;width:6px;height:6px;background:#000;border-radius:10px;left:0;top:7px}
+.UserBox .UserHead figcaption h6{font-size:15px;margin:5px 0 0 0;font-weight:700}
+.UserBox .UserBody{display:flex}
+.UserBox .UserBody aside{width:50%}
+.UserBox .UserBody aside p{font-size:14px;margin:0 0 10px 0}
+.UserBox .UserBody aside p label{margin:0 15px 0 0;width:200px;position:relative;color:#000;font-weight:700}
+.UserBox .UserBody aside p label:after{content:':';position:absolute;right:0}
+.UserBox .UserBody aside p span{font-weight:600}
+.UserBox .UserBody aside h5{font-size:15px;font-weight:700;margin:0 0 10px 0;color:#000}
+
+.PropertyBox{background-color:#efefef;padding:20px;border-radius:10px;border:1px solid #ddd;margin:0 0 20px 0}
+.PropertyBox:last-child{margin:0}
+.PropertyBox .PropertyHead{display:flex;margin:0 0 15px 0}
+.PropertyBox .PropertyHead figure{margin:0;width: 350px;height: 200px;border-radius:10px;overflow:hidden;border:5px solid #fff;box-shadow:0 0 13px #cdc8c8}
+.PropertyBox .PropertyHead figure img{width:100%;height:100%}
+.PropertyBox .PropertyHead figcaption{width: calc(100% - 350px);padding:0 0 0 20px}
+.PropertyBox .PropertyHead figcaption aside{ float:right; }
+.PropertyBox .PropertyHead figcaption aside a{font-size: 15px;margin: 0 0 0 15px;}
+.PropertyBox .PropertyHead figcaption h3{color:#000;font-size:22px;font-weight:700;margin:0 0 6px 0}
+.PropertyBox .PropertyHead figcaption h4{font-weight:700;font-size:14px;margin:0 0 10px 0}
+.PropertyBox .PropertyHead figcaption h4 label{font-size:15px;padding:0 0 0 20px;position:relative;margin:0 0 0 10px}
+.PropertyBox .PropertyHead figcaption h4 label:before{content:'';position:absolute;width:6px;height:6px;background:#000;border-radius:10px;left:0;top:7px}
+.PropertyBox .PropertyHead figcaption ol li{font-size:14px;margin:0 0 10px 0;display: inline-block;width: 49%;}
+.PropertyBox .PropertyHead figcaption ol li:last-child{margin:0}
+.PropertyBox .PropertyHead figcaption ol li label{margin:0 15px 0 0;width:170px;position:relative;color:#000;font-weight:700}
+.PropertyBox .PropertyHead figcaption ol li label:after{content:':';position:absolute;right:0}
+.PropertyBox .PropertyHead figcaption ol li span{font-weight:600}
+.PropertyBox .PropertyBody{border-radius:10px}
+.PropertyBox .PropertyBody h4{color:#000;font-size:20px;font-weight:700;margin:0 0 15px 0}
+.PropertyBox .PropertyBody ul li{color:#000;font-weight:700;display:inline-block;margin:0 30px 0 0;font-size:14px;position:relative}
+.PropertyBox .PropertyBody ul li+li:before{content:'|';left:-20px;position:absolute}
+.PropertyBox .PropertyBody ul li span{display:inline-block;width:25px;margin:0 5px 0 0}
+
+/*.CommonForm h4{font-size:16px;padding:15px 20px;background-color:#f1efef;font-weight:700;color:#000;margin:0 0 20px 0}*/
+.CommonForm .form-group{margin:0 0 20px 0}
+.CommonForm .form-group .form-group{margin:0 0 0 0}
+.CommonForm .form-group label{display:block;color:#000;font-weight:700;font-size:14px;text-transform:capitalize;margin:0 0 10px 0}
+.CommonForm .form-group .form-control{height:auto;padding:10px 10px 10px 15px;border:1px solid #b3b3b3;border-radius:5px;box-shadow:none;font-weight:600;font-size:14px}
+.CommonForm .form-group figure{margin:10px 0 0 0;border: 2px solid #ddd;border-radius: 10px;overflow: hidden;}
+.CommonForm .form-group .ck.ck-label.ck-voice-label{display:none}
+.CommonForm .form-group .ck.ck-editor{margin:0 0 20px 0}
+.CommonForm .form-group .ck.ck-content.ck-editor__editable{padding:10px;min-height:275px}
+.CommonForm .form-group .AmmentitiesBox ul{display: flex;flex-wrap: wrap;margin: 0 -5px;}
+.CommonForm .form-group .AmmentitiesBox ul li{width: calc(100% / 8);padding: 0 5px;position: relative;margin: 0 0 10px 0;}
+.CommonForm .form-group .AmmentitiesBox ul li input{position: absolute;top: 0;left: 5px;width: calc(100% - 10px);height: 100%;z-index: 9;cursor: pointer;opacity: 0;}
+.CommonForm .form-group .AmmentitiesBox ul li aside{border: 2px solid #ddd;padding: 15px 0;text-align: center;border-radius: 10px;}
+.CommonForm .form-group .AmmentitiesBox ul li aside span.Icon{display: inline-block;width: 30px;}
+.CommonForm .form-group .AmmentitiesBox ul li aside label{margin: 7px 0 0 0;}
+.CommonForm .form-group .AmmentitiesBox ul li input:checked~aside{border-color: #000;}
+
+.BookingArea .PropertyBox .PropertyHead figcaption{padding:0 20px 0 0}
+
+.CommissionBox{background:#efefef;border:1px solid #ddd;padding:60px 0;max-width:500px;text-align:center;border-radius:10px;position:relative}
+.CommissionBox h3{font-size:19px;font-weight:700;color:#000;text-transform:capitalize;margin:0 0 15px 0}
+.CommissionBox h4{font-size:50px;font-weight:800;color:#000}
+.CommissionBox a{position:absolute;right:10px;top:10px;font-size:20px;width:30px;height:30px}
+
+.PasswordArea{max-width:600px;background-color:#fff;padding:25px;border:1px solid #dcdcdc;border-radius:10px}
+.PasswordArea .PasswordHead{background-color: #efefef;padding:20px;margin:0 0 20px 0;border-radius:5px}
+.PasswordArea .PasswordHead h3{font-size:20px;font-weight:600;color:#000} 
+.PasswordArea .PasswordBody .form-group{margin:0 0 25px 0}
+.PasswordArea .PasswordBody .form-group label{display:block;color:#000;font-size: 14px;font-weight: 700;}
+.PasswordArea .PasswordBody .form-group .form-control{height:auto;padding: 12px 15px;box-shadow:none;border:1px solid #ddd;font-size:14px;color:#000;font-weight: 600;}
+.PasswordArea .PasswordBody button{border:none;background-color: #000000;color:#fff;padding:12px 35px;font-size:15px;font-weight:500;border-radius:5px;outline: 0;}
+
+.GraphicalBox{background-color:#fff;border-radius:5px;box-shadow:0 0 10px #ddd;margin:0 0 30px 0;border:none;overflow:hidden}
+.GraphicalBox .GraphicalHead{border-bottom:1px solid #ddd;padding:20px;display:flex;align-items:center;justify-content:space-between}
+.GraphicalBox .GraphicalHead p{font-size:18px;font-weight:700;text-transform: capitalize;}
+.GraphicalBox .GraphicalHead select{border:1px solid #ddd; display: none; padding:7px 20px 7px 10px;border-radius:5px;outline:0;cursor:pointer;font-family:"Roboto";font-size:13px;font-weight:400}
+.GraphicalBox .GraphicalBody{padding:20px}
+
+/*.ReviewList .ReviewBox{background-color: #fff;padding: 20px;border-radius: 10px;margin: 0 0 20px 0;display: flex;box-shadow: 0px 4px 11px #cac6c6;}
+.ReviewList .ReviewBox figure{width: 75px;height: 75px;border-radius: 50%;overflow: hidden;}
+.ReviewList .ReviewBox figcaption{width: calc(100% - 75px);padding: 0 0 0 20px;}
+.ReviewList .ReviewBox figcaption aside{ float:right; }
+.ReviewList .ReviewBox figcaption aside a{font-size:15px;margin: 0 0 0 15px;}
+.ReviewList .ReviewBox figcaption h3{font-size: 20px;font-weight: 800;color: #000;margin: 0 0 5px 0;}
+.ReviewList .ReviewBox figcaption h6{font-size: 15px;color: #ecda02;margin: 0 0 10px 0;}
+.ReviewList .ReviewBox figcaption p{font-size: 14px;font-weight: 600;line-height: 23px;margin: 0 0 15px 0;} 
+.ReviewList .ReviewBox figcaption ol li{border: 3px solid #ddd;display: inline-block;width: 170px;border-radius: 10px;overflow: hidden;}
+*/
+
+.AdminActivity ul li{border:1px solid #ddd;padding:20px;border-radius:10px;background-color:#fbfbfb;margin: 0 0 15px 0;} 
+.AdminActivity ul li h4{font-size:18px;font-weight:700;color:#000;margin:0 0 10px 0}
+.AdminActivity ul li p{font-size:14px;margin:0 0 10px 0;}
+.AdminActivity ul li p label{margin:0 15px 0 0;width:150px;position:relative;color:#000;font-weight:700}
+.AdminActivity ul li p label:after{content:':';position:absolute;right:0}
+.AdminActivity ul li p span{font-weight:600} 
+
+.SupportDetails{padding:20px;background-color:#fff;border:1px solid #ddd;border-radius:10px}
+.SupportDetails ul li{margin-bottom:20px;display:flex}
+.SupportDetails ul li figure{color:#4d5052;font-weight:600;width:40px;height:40px;border-radius:50%;display:inline-block;position:relative;vertical-align:bottom;font-size:.875rem;user-select:none;overflow:hidden;margin:0 10px 0 0}
+.SupportDetails ul li figcaption{display:inline-block;width:calc(100% - 50px);max-width:850px}
+.SupportDetails ul li figcaption h3{font-size:18px;font-weight:700;color:#000;margin:0 0 5px 0}
+.SupportDetails ul li figcaption h4{font-size:16px;font-weight:600;margin:0 0 5px 0}
+.SupportDetails ul li figcaption p{font-size:14px;font-weight:600;margin:0 0 5px 0}
+.SupportDetails ul li figcaption span.time{display:block;font-weight:700;color:#565656;font-size:12px}
+.SupportDetails ul li.OtherMessage{flex-direction:row-reverse}
+.SupportDetails ul li.OtherMessage figure{margin:0 0 0 10px}
+.SupportDetails ul li.OtherMessage figcaption{text-align:right}
+.SupportDetails ul li.OtherMessage figcaption p{background-color: #efefef;padding: 10px 20px;border-radius: 10px 0px 10px 10px;}
+
+.MessageReply{border:1px solid #ddd;display:flex;padding:10px 15px;border-radius:10px}
+.MessageReply .form-control{border:none;padding:0;font-size:15px;font-weight:600;box-shadow:none;height:auto}
+.MessageReply button{border:none;background:#00a6b6;font-size:15px;padding:8px 30px;color:#fff;font-weight:500;border-radius:5px}
+
+.MessagesList ul li{margin:0 0 20px;border-bottom:1px dotted #ddd;padding:0 0 20px 0}
+.MessagesList ul li:last-child{border:none;padding:0;margin:0}
+.MessagesList ul li a{display:block;padding:0 50px 0 50px;position:relative}
+.MessagesList ul li a span.Count{position:absolute;right:0;background-color:green;color:#fff;width:25px;height:30px;border-radius:50%;text-align:center;line-height:32px}
+.MessagesList ul li a figure{position:absolute;top:0;left:0;width:40px;height:40px;border-radius:50%;overflow:hidden}
+.MessagesList ul li a h3{font-size:17px;color:#363636;margin:0 0 5px 0;font-weight:700}
+.MessagesList ul li a h3 span{font-size:14px;color:#000}
+.MessagesList ul li a p{font-size:13px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;color:#656565}
+
+.DocumentsBox article{background-color:#f5f5f5;padding:20px;border-radius:5px;margin:0 0 20px 0}
+.DocumentsBox article h4{margin:0 0 20px 0;font-weight:700;font-size:20px}
+.DocumentsBox article ul li{display:inline-block;margin:0 20px 0 0;border-radius:5px;overflow:hidden;box-shadow:0 0 4px #adaaaa}
+.DocumentsBox article ul li figure{width:300px;margin:0}
+.DocumentsBox article ul li figcaption{text-align:center;padding:12px 0;background-color:#fff}
+.DocumentsBox article ul li figcaption p{color:#000;font-weight:700;font-size:15px;margin:0;display:block;text-align:center;width:100%}
+.DocumentsBox article p{display:inline-block;width:49%;margin:0 10px 20px 0}
+.DocumentsBox article p label{margin:0 0 10px 0;display:block;font-size:15px;font-weight:700;color:#000}
+.DocumentsBox article p span{box-shadow:none;border:1px solid #c3c3c3;display:block;background-color:#eee;font-size:15px;font-weight:700;color:#000;padding:12px 20px;border-radius:5px}
+
+.DocumentsButtons{text-align:center}
+.DocumentsButtons button{padding:10px 35px;display:inline-block;background-color:#000;margin:0 5px;color:#fff;transition:0.5s all ease-in-out;font-size:15px;letter-spacing:.5px;border:none}
+.DocumentsButtons button:first-child{background-color:#37a713}
+.DocumentsButtons button:last-child{background-color:#e21818}
+
+.StaticArea .panel-group{margin:0;}
+.StaticArea .panel-group .panel{border: 1px solid #e9e9e9;border-radius:0;}
+.StaticArea .panel-group .panel+.panel{margin: 20px 0 0 0;}
+.StaticArea .panel-group .panel .panel-heading{cursor:pointer;background-color: #e9e9e9;border-radius:0;padding: 15px 55px 15px 20px;position:relative;display:flex;align-items:center;justify-content:space-between;}
+.StaticArea .panel-group .panel .panel-heading:after{content:'\f107';font-family:FontAwesome;color:#000;position:absolute;top:18px;right:20px;font-size:19px;font-weight:600;line-height:14px;transition:0.5s all ease-in-out}
+.StaticArea .panel-group .panel .panel-heading[aria-expanded="true"]:after{transform:rotate(180deg)}
+.StaticArea .panel-group .panel .panel-heading h4{font-size: 17px;color:#000;font-weight: 600;}
+.StaticArea .panel-group .panel .panel-heading h4 span{margin: 0 10px 0px 0;}
+.StaticArea .panel-group .panel .panel-heading a{color:#000;font-size:14px}
+.StaticArea .panel-group .panel .panel-body{ padding: 15px; }
+.StaticArea .panel-group .panel .panel-body:before{content:none}
+.StaticArea .panel-group .panel .panel-body p{font-size:15px;line-height:28px;font-weight:400;color: #404040;}
+.StaticArea .panel-group .panel .panel-body p+p{margin-top:15px}
+
+.QueriesBox{background-color: #ffffff;padding: 20px;border-radius: 10px;border: 1px solid #ddd;margin: 0 0 20px 0;}
+.QueriesBox:last-child{ margin:0 }
+.QueriesBox h3{margin:0 0 15px 0;font-size:20px;font-weight:700;color:#000}
+.QueriesBox .QueriesHead{display: flex;margin: 0 0 15px 0;}
+.QueriesBox .QueriesHead article{width: 100%;display: flex;}
+.QueriesBox .QueriesHead article figure{width: 50px;margin: 0 15px 0 0;} 
+.QueriesBox .QueriesHead article figcaption{width: calc(100% - 65px);}
+.QueriesBox .QueriesHead article figcaption h4{font-weight: 700;font-size: 18px;margin: 0 0 8px 0;}
+.QueriesBox .QueriesHead article figcaption h6{font-size: 15px;margin: 0 0 5px 0;font-weight:700;color:#000}
+.QueriesBox .QueriesHead article figcaption p{font-size: 14px;font-weight: 600;line-height: 24px;margin: 0 0 10px 0;}
+.QueriesBox .QueriesHead article figcaption p strong{color: #37b503;margin: 0 15px 0 0;font-weight: 600;}
+.QueriesBox .QueriesHead article figcaption ol li{border: 3px solid #fff;display: inline-block;width: 140px;border-radius: 10px;overflow: hidden;box-shadow: 0px 0px 3px #b5b4b4;}
+.QueriesBox .QueriesBody{background-color: #f5f5f5;padding:20px 20px 20px 90px;border-radius:10px;position:relative;margin: 0 0 15px 0;}
+.QueriesBox .QueriesBody figure{position:absolute;top:20px;left:20px;width:60px;height:60px;border-radius:50%;overflow:hidden;margin:0}
+.QueriesBox .QueriesBody h4{font-weight:700;font-size: 17px;margin:0 0 5px 0} 
+.QueriesBox .QueriesBody h5{font-size:14px}
+.QueriesBox .QueriesBody h5 strong{color:#37b503;margin:0 15px 0 0;font-weight:600}
+.QueriesBox .QueriesBody aside{float:right;z-index:1}
+.QueriesBox .QueriesBody article h6{font-size: 15px;color: #ecda02;margin: 0 0 10px 0;}
+.QueriesBox .QueriesBody article p{font-size:14px;line-height:23px;font-weight:600;margin: 0 0 10px 0;}
+.QueriesBox .QueriesBody article ol li{border: 3px solid #fff;display: inline-block;width: 130px;border-radius: 10px;overflow: hidden;box-shadow: 0px 0px 5px #767373;}
+
+.NewPropertyBox{padding:10px;background-color:#fff;box-shadow:0 0 10px #ddd;border-radius:10px;margin:0 0 30px 0}
+.NewPropertyBox figure{border-radius:10px;overflow:hidden;margin:0}
+.NewPropertyBox figcaption{padding:15px 0 0 0}
+.NewPropertyBox figcaption h3{font-size:18px;margin:0 0 10px 0}
+.NewPropertyBox figcaption h3 a{color:#000;font-weight:800}
+.NewPropertyBox figcaption ul li{display:inline-block;margin:0 20px 0 0;font-size:15px;font-weight:600;color:#7a7a7a}
+.NewPropertyBox figcaption ul li span{color:#ff8100;margin:0 9px 0 0}
+.NewPropertyBox figcaption ul li strong{color:#000;font-weight:800}
+
+.ListingBox aside{border-bottom:3px solid #c5bebe;padding:15px;margin:0 0 15px 0;border-radius:10px;background:#f7f7f7}
+.ListingBox aside:last-child{margin:0}
+.ListingBox aside h5{color:#000;font-weight:700;margin:0 0 14px 0}
+.ListingBox aside p{font-weight:600;font-size:14px;margin:0 0 8px;color:#4a4a4a}
+.ListingBox aside p:last-child{margin:0}
+.ListingBox aside article{display:flex}
+.ListingBox aside article figure{border:3px solid #fff;border-radius:10px;overflow:hidden;margin:0 15px 0 0;box-shadow:0 0 10px #b7b6b6;width:150px}
+.ListingBox .ListingPhotos ul{display:flex;flex-wrap:wrap}
+.ListingBox .ListingPhotos ul li{border:3px solid #fff;border-radius:10px;overflow:hidden;width:18.5%;margin:0 15px 20px 0;box-shadow:0 0 10px #b7b6b6}
+
+.RateBox{margin:20px 0 0 0}
+.RateBox ul{margin:0 0 20px 0}
+.RateBox ul li{display:inline-block;width:130px}
+.RateBox .RateList h5{margin:0 0 15px 0;font-weight:700;color:#000}
+.RateBox .RateList article{background-color:#f7f7f7;padding:20px 0 0 20px;border:1px solid #ddd;border-radius:10px;display:flex;flex-wrap:wrap}
+.RateBox .RateList article aside{background-color:#fff;display:inline-block;border:1px solid #ddd;text-align:center;padding:15px 10px;margin:0 15px 20px 0;border-radius:6px;min-width:190px}
+.RateBox .RateList article aside p{font-size:14px;font-weight:700;color:#464646;margin:0 0 15px 0}
+.RateBox .RateList article aside h6{color:#000;font-weight:700}
+
+.TransactionOverview .OverviewBox h5{ font-size:28px }
+
+
+.PropertyImage{
+    margin: 0 0 20px 0;
+}
+
+.PropertyImage figure{margin:0;border-radius: 20px;overflow: hidden;position: relative;}
+
+
+
+.PropertyImage .GroupThree{display:flex;margin: 0 -10px;}
+
+.PropertyImage .GroupThree .GroupThreeFirst{width: 70%;padding: 0 10px;}
+
+.PropertyImage .GroupThree .GroupThreeFirst figure{}
+
+.PropertyImage .GroupThree .GroupThreeFirst figure img{
+    width: 100%;
+}
+
+.PropertyImage .GroupThree .GroupThreeSecond{width: 30%;padding: 0 10px;}
+
+.PropertyImage .GroupThree .GroupThreeSecond figure{
+    height: 255px;
+}
+
+.PropertyImage .GroupThree .GroupThreeSecond figure img{
+    width: 100%;
+}
+
+.PropertyImage .GroupThree .GroupThreeSecond figure a{
+    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.PropertyImage .GroupThree .GroupThreeSecond figure+figure{
+    margin: 20px 0 0 0;
+}
+
+.BookingInformation{}
+
+.BookingInformation .PropertyInformation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BookingInformation .PropertyInformation aside{}
+
+.BookingInformation .PropertyInformation aside h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.BookingInformation .PropertyInformation aside h6{
+    color: #DDAC17;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.BookingInformation .PropertyInformation aside h6 i{}
+
+.BookingInformation .PropertyInformation aside h6 span{
+    color: #000000;
+    padding: 0 0 0 20px;
+    border-left: 1px solid #afafaf;
+    margin: 0 0 0 15px;
+}
+
+.BookingInformation .PropertyInformation aside button{
+    border: 1px solid #ddd;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin: 0 0 0px 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.BookingInformation .PropertyInformation aside button.Cancel{
+    background-color: #000;
+    border-color: #000;
+    color: #ffff;
+    border-radius: 50px;
+}
+
+.BookingInformation .PropertyInformation aside button.Status{
+    outline: 0;
+}
+
+.BookingInformation .PropertyInformation aside button.Status.Green{
+    background-color: #37a713;
+    color: #fff;
+    border-color: #37a713;
+}
+
+.BookingInformation .PropertyInformation aside button.Status.Orange{
+    background-color: #e99c3d;
+    color: #fff;
+    border-color: #e99c3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BookingFacilities ul{}
+.BookingFacilities ul li{display:inline-block;padding:0 15px;text-align:center;margin:0 0 20px 0}
+.BookingFacilities ul li aside span{display:inline-block}
+.BookingFacilities ul li aside label{display:block;margin:10px 0 0 0;color:#9b9b9b;font-weight:600}
+.BookingFacilities+.ListingBox{margin:0 0 20px 0}
+
+.BookingLocation{margin:20px 0 0 0;position:relative;border-radius:10px;overflow:hidden}
+.BookingLocation iframe{width:100%;border:none;height:300px}
+.BookingLocation article{position:absolute;bottom:0;left:0;width:100%;text-align:center}
+.BookingLocation article figcaption{background-color:#000000b8;padding:10px 0}
+.BookingLocation article figcaption p{color:#fff;font-size:14px;font-weight:500}
+.BookingLocation article figcaption p span{margin:0 10px 0 0}
+.BookingLocation article aside{background-color:#000;padding:10px 0}
+.BookingLocation article aside p{color:#fff;font-size:14px;font-weight:600}
+.BookingLocation article aside p a{width:30px;height:30px;display:inline-block;background-color:#fff;color:#000;border-radius:50px;line-height:30px;margin:0 0 0 10px}
+
+.BookingArea .StaticArea .panel-group .panel{border-radius:7px;overflow:hidden;border:2px solid #ddd}
+.BookingArea .StaticArea .panel-group .panel .panel-heading{background-color:#fff}
+
+.BookingCheckin ul li{display:inline-block;margin:0 20px 0 0}
+.BookingCheckin ul li aside{border:2px solid #c3bebe;padding:15px;min-width:200px;border-radius:6px}
+.BookingCheckin ul li aside h5{color:#000;font-weight:700;font-size:15px;margin:0 0 10px 0}
+.BookingCheckin ul li aside p{font-size:14px;font-weight:600;color:#959191;display:flex;align-items:center}
+.BookingCheckin ul li aside p span{margin:0 10px 0 0}
+
+.BookingPrice p{font-size:15px;font-weight:600;color:#6e6e6e;margin:0 0 15px 0}
+.BookingPrice p span{float:right}
+.BookingPrice h6{color:#000;font-weight:800;font-size:17px;border-top:1px solid #ddd;padding:15px 0 0 0}
+.BookingPrice h6 span{float:right}
+
+.BookingCustomer article{padding:15px;margin:0 0 15px 0;border-radius:10px;background:#f7f7f7;display:inline-flex;align-items:center;min-width:500px}
+.BookingCustomer article figure{margin:0;width:75px;height:75px;border-radius:50%;overflow:hidden}
+.BookingCustomer article figcaption{padding:0 0 0 15px}
+.BookingCustomer article figcaption h5{font-weight:700;color:#000;margin:0 0 10px 0}
+.BookingCustomer article figcaption h6{color:#DDAC17;font-size:14px}
+.BookingCustomer article figcaption h6 strong{color:#000}
+.BookingCustomer .BookingCheckin ul li aside{min-width:350px}
+
+
+
+.ModalBox .modal-dialog{max-width:450px;margin:50px auto}
+.ModalBox .modal-dialog .CloseModal{position:absolute;top:-13px;right:-13px;width:26px;height:26px;background-color:#fff;border:2px solid rgba(0,0,0,.5);text-align:center;color:#000;font-size:15px;border-radius:50%}
+.ModalBox .modal-dialog .Decline{margin:0}
+.ModalBox .modal-dialog .Decline h3{font-family:"Roboto";font-weight:700;font-size:22px;margin:0 0 5px;text-align:left}
+.ModalBox .modal-dialog .Decline p{font-size:16px;font-family:"Roboto";color:#777;text-align:left}
+.ModalBox .modal-dialog .Decline h4{margin:15px 0 0 0;text-align:right}
+.ModalBox .modal-dialog .Decline h4 a{text-transform:capitalize;margin:0 0 0 30px;font-size:17px;color:#49a0d5;font-weight:400;-webkit-transition:0.5s all ease-in-out;transition:0.5s all ease-in-out}
+.ModalBox .modal-dialog .Decline h4 a:hover{color:#000}
+
+.ModalBox .modal-dialog .Category{padding:10px 10px}
+.ModalBox .modal-dialog .Category h3{text-align:center;font-weight: 800;margin:0 0 20px 0;border-bottom:1px solid #ddd;padding:0 0 15px;font-size:23px}
+.ModalBox .modal-dialog .Category .form-group{margin:0 0 20px;position:relative}
+.ModalBox .modal-dialog .Category .form-group label{display:block;font-weight:500;color:#000;font-size:15px;font-family:"Roboto"}
+.ModalBox .modal-dialog .Category .form-group .form-control{box-shadow:none;border:1px solid #c3c3c3;font-size:14px;color:#000;line-height:22px;font-family: "Roboto";height: auto;padding: 10px 15px;}
+.ModalBox .modal-dialog .Category .form-group textarea.form-control{height:auto}
+
+.ModalBox .modal-dialog .Category .form-group p{ color: #727272; font-weight: 600; font-size: 14px;}
+
+#TrackUser .modal-dialog{max-width:750px}
+.Tracking{border:5px solid #fff;box-shadow:0 0 10px #ddd}
+.Tracking iframe{width:100%;height:500px;border:none}

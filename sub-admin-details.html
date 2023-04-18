@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="Header"> 
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                    Bob Hyden
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                      <li>
+                        <a href="manage-account.html">
+                            <span><i class="fa fa-sliders"></i></span> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <div class="Logo">
+            <img src="images/Logo.png" />
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> User Management
+                </a>
+            </li>
+
+            
+
+            <li>
+                <a href="property-owner-management.html">
+                    <span><i class="fa fa-cubes"></i></span> Property Owner Management
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="booking-management.html">
+                    <span><i class="fa fa-calendar-check-o"></i></span> Booking Management 
+                </a>
+            </li>
+
+              
+
+            <li>
+                <a href="trancation-management.html">
+                    <span><i class="fa fa-money"></i></span> Transaction Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="fa fa-money"></i></span> Commission Management 
+                </a>
+            </li>
+
+            <li>
+                <a href="refund-account.html">
+                    <span><i class="fa fa-credit-card"></i></span> Refund Management
+                </a>
+            </li>
+
+             
+
+            <li>
+                <a href="notifications.html">
+                    <span><i class="fa fa-bell-o"></i></span> Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="app-content.html">
+                    <span><i class="fa fa-font"></i></span> Manage App Content 
+                </a>
+            </li>  
+
+            <li>
+                <a href="review.html">
+                    <span><i class="fa fa-star"></i></span> Review & Rating
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="sub-admin-managemnet.html">
+                    <span><i class="fa fa-users"></i></span> Sub Admin Management
+                </a>
+            </li>
+
+             
+
+             
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="WrapperArea">
+        <div class="WrapperBox"> 
+            <div class="Small-Wrapper">
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h4>Sub Admin Details</h4>
+                    </div>   
+                </div>
+                <div class="AdminActivity">
+                    <ul>
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span> 
+                            </label>
+
+                            <!-- <h4>Simmi Sharma</h4> -->
+                            <p>
+                                <label>Sub Admin Id</label>
+                                <span>Subadmin123</span>
+                            </p>
+                            <p>
+                                <label>Sub Admin Name</label>
+                                <span>Simmi Sharmam</span>
+                            </p>
+                            <p>
+                                <label>Email Address</label>
+                                <span>simmi@gmail.com</span>
+                            </p>  
+                        </li> 
+                    </ul>
+                </div>
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h4>Rights & Access</h4>
+                    </div>   
+                </div>
+                <div class="AdminAccess">
+                    <fieldset disabled="">
+                        <div class="TableList">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Module</th>
+                                                <th colspan="2">Access</th> 
+                                                <th>
+                                            </th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Dashboard</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>User Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                       <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr> 
+                                            <tr>
+                                                <td><strong>Property Owner Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Booking Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Transaction Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Commission Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Refund Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Notifications</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Manage App Content</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Review & Rating</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Sub Admin Management</strong></td>
+                                                <td>
+                                                    <label class="CheckBox"> View
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="CheckBox"> Manage
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </td> 
+                                                <td></td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                </div>
+                    </fieldset>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
