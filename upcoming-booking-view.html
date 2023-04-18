@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/custom.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/custom2.css" />
+</head>
+
+<body>
+
+    <div class="Header bg-white">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                    <span class="BellCount"></span>
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+            <div class="Logo">
+                <img src="images/Logo.png" />
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span><img src="images/dashboard/dashboard.png"></span> Dashboard
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="property-management.html">
+                        <span><img src="images/dashboard/property-management.png"></span> Property Management
+                    </a>
+                </li>
+    
+                <li class="active">
+                    <a href="booking-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Booking Management 
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="message.html">
+                        <span><img src="images/dashboard/message.png"></span> Message
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-your-profits.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Your Profits
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-review.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Review
+                    </a>
+                </li>
+
+                <li>
+                    <a href="coupon-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Coupon Management
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="profile.html">
+                        <span><img src="images/dashboard/profile.png"></span> Profile
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="settings.html">
+                        <span><img src="images/dashboard/settings.png"></span> Settings
+                    </a>
+                </li>
+            </ul>
+            <div class="SidenavBarBottom">
+                <ul>
+                    <li><a href="price-calculator.html">Price Calculator</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="private-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-use.html">Terms & Use</a></li>
+                    <li><a href="sales-refund.html">Sales & Refund</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="WrapperArea bg-white">
+        <div class="WrapperBox bg-white">
+            <div class="Small-Wrapper bg-white">
+
+                
+
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h5>Booking Management</h5>
+                    </div>
+                    <div class="TitleLink">
+                        <div class="Title-search"><input type="search" placeholder="Search Reviews"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="TitleSort">
+                            <select>
+                                <option selected>Sort</option>
+                                <option>Monthly</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                
+                <div class="bmImageArea">
+                        <div class="row">
+                            <div class="col-md-8">
+                               <div class="mbImageAreaLeft">
+                                <figure>
+                                    <img src="images/img-7.png">
+                                   </figure>
+                               </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mbImageAreaRight">
+                                            <figure><img src="images/img-11.png"></figure>
+                                            <figure><img src="images/img-11.png">
+                                                <figcaption>
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                         More <br> 8+
+                                                      </button>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="PropertyBody">
+                    <div>
+                        <h4>Classic Flat Room</h4>
+                    <ul>
+                        <li><span><i class="fa-sharp fa-solid fa-star"></i>4.9 (225)</span> review</li>
+                        <li>2023/03/12</li>
+                    </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="cancelBookingBtn">Cancel Booking</button>
+                        <button type="button" class="confirmBtn">Confirmed</button>
+                    </div>
+                </div>
+                <div class="facilitiesBox">
+                    <div class="form-group">  
+                        <label>Facilities</label>
+                        <div class="AmmentitiesBox">
+                            <ul>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-1.png"></span>
+                                        <label>Wi-Fi</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-2.png"></span>
+                                        <label>Breakfast</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-3.png"></span>
+                                        <label>AC</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-4.png"></span>
+                                        <label>Minibar</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-5.png"></span>
+                                        <label>Extinguisher</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-6.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-7.png"></span>
+                                        <label>Bathub</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-8.png"></span>
+                                        <label>CCTV</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-9.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-10.png"></span>
+                                        <label>Extinguisher</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-11.png"></span>
+                                        <label>Bathub</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-12.png"></span>
+                                        <label>CCTV</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-13.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-1.png"></span>
+                                        <label>Wi-Fi</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-2.png"></span>
+                                        <label>Breakfast</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-3.png"></span>
+                                        <label>AC</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-4.png"></span>
+                                        <label>Minibar</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-5.png"></span>
+                                        <label>Extinguisher</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-6.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-7.png"></span>
+                                        <label>Bathub</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-8.png"></span>
+                                        <label>CCTV</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-9.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-10.png"></span>
+                                        <label>Extinguisher</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-11.png"></span>
+                                        <label>Bathub</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-12.png"></span>
+                                        <label>CCTV</label>
+                                    </aside>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <aside>
+                                        <span class="Icon"><img src="images/Amendities-13.png"></span>
+                                        <label>Pet</label>
+                                    </aside>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <div class="selfCheckArea">
+                    <figure><img src="images/self-check.png"></figure>
+                    <h3>Self Check-in & Check-out</h3>
+                    <p>You can easily self check-in & check-out through your app</p>
+                </div>
+
+                 <div class="descriptionArea">
+                    <h3>Discription</h3>
+                    <p>Nulla sed dignissim turpis sit imperdiet ipsum conseq uat. Integer quisque aliquet fermentum iaculis molestie nunc. Vitae lectus malesuada in volutpat aenean duis sapien,</p>
+                    <p>Nulla sed dignissim turpis sit imperdiet ipsum conseq uat. Integer quisque aliquet fermentum iaculis molestie nunc. Vitae lectus malesuada in volutpat aenean duis sapien, </p>
+                    <a href="#" class="readMore">Read More</a>
+                </div>
+
+
+                <div class="StaticArea">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
+                                <h4>Food and drink </h4>
+                                
+                            </div>
+                            <div id="collapse1" class="panel-collapse show collapse in">
+                                <div class="panel-body">
+                                    <p>Free buffet breakfast daily</p>
+                                    <p>Bar / lounge</p>
+                                    <p>Barbecue grills</p>
+                                    <p>Restaurant</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <h4>House Services</h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Free buffet breakfast daily</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <h4>House Rules</h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Free buffet breakfast daily</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="StaticAreaMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.98363573067!2d110.33982522910748!3d-7.803163972536023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1680168991630!5m2!1sen!2sin" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p href="#"><img src="images/location.png"> JL. Rotowijayan No. 14, Yogyakarta  </p> 
+                    <a href="#">Map Direction <span><img src="images/mapdirection.png"></span> </a> 
+                </div>
+
+                <div class="customerBox">
+                    <div class="customerHead">
+                        <h3>Customer</h3>
+                       <div class="cdArea">
+                        <figure><img src="images/customer.png"></figure>
+                       <figcaption>
+                          <h5>Wade Warren</h5>
+                          <h6><span><i class="fa-sharp fa-solid fa-star"></i>4.9 (225)</span>review</h6>
+                       </figcaption>
+                       </div>
+                    </div>
+                    <div class="customerDetails">
+                        <h3>Contact Details</h3>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="detailsBox">
+                                            <h6>Email Address</h6>
+                                            <p>abdulkorim@gmail.com</p>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="detailsBox">
+                                            <h6>Phone Number</h6>
+                                            <p>+235 2365 1462</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceDetails">
+                        <h3>Booking Details</h3>
+                         <ul>
+                            <li>
+                                <label>Check-in</label>
+                                 <figure><img src="images/img-9.png"><figcaption>2023/03/12</figcaption></figure>
+                            </li>
+                            <li>
+                                <label>Check-out</label>
+                                 <figure><img src="images/img-9.png"><figcaption>2023/04/12</figcaption></figure>
+                            </li>
+                            <li>
+                                <label>Check-in-time</label>
+                                 <figure><img src="images/img-10.png"><figcaption>10:00 am</figcaption></figure>
+                            </li>
+                            <li>
+                                <label>Check-out-time</label>
+                                 <figure><img src="images/img-10.png"><figcaption>02:00 pm</figcaption></figure>
+                            </li>
+                            <li>
+                                <label>Rooms & Guests</label>
+                                 <figcaption>2 Room, 2 Guests</figcaption>
+                            </li>
+                         </ul>
+                        <h3>Price Details</h3>
+                        
+                        <div class="priceDetails-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>SAR 437.5 X 4 Nights</td>
+                                        <td>SAR 1750.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount (-25%)</td>
+                                        <td>SAR 1750.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rushroom 25 (-25%)</td>
+                                        <td>SAR 175.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Service fee</td>
+                                        <td>SAR 30.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>SAR 2130.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                   
+
+                
+            </div>
+  
+        </div>
+    </div>
+    
+    <!-- More images modal  -->
+<div class="bmImageAreaModal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">More Images</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <ul>
+                <li><figure><img src="images/img-11.png"></figure></li>
+                <li><figure><img src="images/img-11.png"></figure></li>
+                <li><figure><img src="images/img-11.png"></figure></li>
+                <li><figure><img src="images/img-11.png"></figure></li>
+                <li><figure><img src="images/img-11.png"></figure></li>
+                <li><figure><img src="images/img-11.png"></figure></li>
+               </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- More images modal  -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

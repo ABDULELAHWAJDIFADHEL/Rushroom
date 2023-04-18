@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/custom.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/custom2.css" />
+</head>
+
+<body>
+
+    <div class="Header bg-white">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                    <span class="BellCount"></span>
+
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="SidenavBar">
+            <div class="Logo">
+                <img src="images/Logo.png" />
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span><img src="images/dashboard/dashboard.png"></span> Dashboard
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="property-management.html">
+                        <span><img src="images/dashboard/property-management.png"></span> Property Management
+                    </a>
+                </li>
+    
+                <li class="active">
+                    <a href="booking-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Booking Management 
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="message.html">
+                        <span><img src="images/dashboard/message.png"></span> Message
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-your-profits.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Your Profits
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-review.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Review
+                    </a>
+                </li>
+
+                <li>
+                    <a href="coupon-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Coupon Management
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="profile.html">
+                        <span><img src="images/dashboard/profile.png"></span> Profile
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="settings.html">
+                        <span><img src="images/dashboard/settings.png"></span> Settings
+                    </a>
+                </li>
+            </ul>
+            <div class="SidenavBarBottom">
+                <ul>
+                    <li><a href="price-calculator.html">Price Calculator</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="private-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-use.html">Terms & Use</a></li>
+                    <li><a href="sales-refund.html">Sales & Refund</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="WrapperArea bg-white">
+        <div class="WrapperBox bg-white">
+            <div class="Small-Wrapper bg-white">
+
+                
+
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h5>Booking Management</h5>
+                    </div>
+                    <div class="TitleLink">
+                        <div class="Title-search"><input type="search" placeholder="Search Reviews"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="TitleSort">
+                            <select>
+                                <option selected>Sort</option>
+                                <option>Monthly</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                
+                <div class="OverviewArea">
+                    <div class="TabArea">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">New Request</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Upcoming Booking</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Completed Booking</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-cancel-tab" data-toggle="pill" href="#pills-cancel" role="tab" aria-controls="pills-cancel" aria-selected="false">Cancelled Booking</a>
+                              </li>
+                          </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>PROPERTY ID</th>
+                                                    <th>Property Name</th>
+                                                    <th>Customer Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>CHECKIN DATE<br>
+                                                        & TIME</th>
+                                                    <th>CHECKOUT DATE<br>
+                                                        & TIME</th>
+                                                    <th>OFFER PRICE</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unRead">
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="new-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>BOOKING ID</th>
+                                                    <th>PROPERTY ID</th>
+                                                    <th>Property Name</th>
+                                                    <th>Customer Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>PAYMENT STATUS</th>
+                                                    <th>BOOKING DATE</th>
+                                                    <th>CHECKIN DATE<br>
+                                                        & TIME</th>
+                                                    <th>CHECKOUT DATE<br>
+                                                        & TIME</th>
+                                                    <th>OFFER PRICE</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="pendingBtn">Pending</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="confirmBtn">Confirmed</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="pendingBtn">Pending</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="confirmBtn">Confirmed</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="pendingBtn">Pending</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="confirmBtn">Confirmed</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td>
+                                                        <td><span class="pendingBtn">Pending</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td><span class="confirmBtn">Confirmed</span></td>
+                                                        <td>2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="upcoming-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>BOOKING ID</th>
+                                                    <th>PROPERTY ID</th>
+                                                    <th>Property Name</th>
+                                                    <th>Customer Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>CHECKIN DATE<br>
+                                                        & TIME</th>
+                                                    <th>CHECKOUT DATE<br>
+                                                        & TIME</th>
+                                                    <th>PRICE</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="complete-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-cancel" role="tabpanel" aria-labelledby="pills-cancel-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>BOOKING ID</th>
+                                                    <th>PROPERTY ID</th>
+                                                    <th>Property Name</th>
+                                                    <th>Customer Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>CHECKIN DATE<br>
+                                                        & TIME</th>
+                                                    <th>CHECKOUT DATE<br>
+                                                        & TIME</th>
+                                                    <th>REFUND</th>
+                                                    <th></th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>219300100</td>
+                                                        <td>219300100</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>+96651400576516</td> 
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>10:40 AM, <br> 2023/03/12</td>
+                                                        <td>SAR 302.00</td>
+                                                        <td>
+                                                            <div class="dropdown dropleft">
+                                                                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <a class="dropdown-item viewDetails" href="cancel-booking-view.html">View Details</a>
+                                                                  <a class="dropdown-item accept" href="#">Accept</a>
+                                                                  <a class="dropdown-item reject" href="#">Reject</a>
+                                                                </div>
+                                                              </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                  </div>
+                           
+                    </div>
+                </div>
+                <div class="PaginationArea">
+                    <span>Show 8 from 120 products</span>
+                    <div class="pagination">
+                        <i class="fa-solid fa-chevron-left left-chevron"></i>
+                        <div class="page-numbers">
+                          <button class="btn-page">1</button>
+                          <button class="btn-page">2</button>
+                          <button class="btn-page btn-selected">3</button>
+                          <button class="btn-page">4</button>
+                          <button class="btn-page">5</button>
+                          <button class="btn-page">6</button>
+                          <span class="dots">...</span>
+                          <button class="btn-page">12</button>
+                        </div>
+                        <i class="fa-solid fa-chevron-right right-chevron"></i>
+                      </div>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rush Room</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/custom.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/custom2.css" />
+</head>
+
+<body>
+
+    <div class="Header bg-white">
+        <div class="Navigation">
+            <div class="Bell">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-bell"></i>
+                    <span class="BellCount"></span>
+
+                </a>
+            </div>
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/Profile.jpg" /></figure>
+                </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/Profile.jpg" /></figure>
+                        <h4>Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span><i class="fa fa-sign-out"></i></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="SidenavBar">
+            <div class="Logo">
+                <img src="images/Logo.png" />
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <span><img src="images/dashboard/dashboard.png"></span> Dashboard
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="property-management.html">
+                        <span><img src="images/dashboard/property-management.png"></span> Property Management
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="booking-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Booking Management 
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="message.html">
+                        <span><img src="images/dashboard/message.png"></span> Message
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-your-profits.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Your Profits
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manage-review.html">
+                        <span><img src="images/dashboard/payment.png"></span> Manage Review
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="coupon-management.html">
+                        <span><img src="images/dashboard/book-management.png"></span> Coupon Management
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="profile.html">
+                        <span><img src="images/dashboard/profile.png"></span> Profile
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="settings.html">
+                        <span><img src="images/dashboard/settings.png"></span> Settings
+                    </a>
+                </li>
+            </ul>
+            <div class="SidenavBarBottom">
+                <ul>
+                    <li><a href="price-calculator.html">Price Calculator</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="private-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-use.html">Terms & Use</a></li>
+                    <li><a href="sales-refund.html">Sales & Refund</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="WrapperArea bg-white">
+        <div class="WrapperBox bg-white">
+            <div class="Small-Wrapper bg-white">
+
+                
+
+                <div class="TitleBox">
+                    <div class="Title">
+                        <h5>Coupon Management</h5>
+                    </div>
+                    <div class="TitleLink">
+                        <div class="Title-search"><input type="search" placeholder="Search Reviews"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="TitleSort">
+                            <select>
+                                <option selected>Sort</option>
+                                <option>Monthly</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                
+                <div class="OverviewArea">
+                    <div class="TabArea">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Generated Coupon</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Coupon Status</a>
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <button type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fa-solid fa-plus"></i> Add Coupon
+                                  </button>
+                            </li>
+                          </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>Coupon Code</th>
+                                                    <th>Coupon Expiry DATE</th>
+                                                    <th>COUPON DESCRIPTION</th>
+                                                    <th>COUPON QTY.</th>
+                                                    <th>COUPON USED</th>
+                                                    <th>Property Name</th>
+                                                    <th colspan="2">PERCENTAGE</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td>
+                                                        <td>Zachary Parker</td>
+                                                        <td>05</td>
+                                                        <td>05</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>10%</td> 
+                                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                                    </tr>
+                                                  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="TableList">
+                                            <table>
+                                                <thead>
+                                                    <th>CUSTOMER NAME</th>
+                                                    <th>PROPERTY NAME</th>
+                                                    <th>Coupon Code</th>
+                                                    <th>Coupon Expiry DATE</th>
+                                                    <th>Coupon sTATUS</th>
+                                                    <th colspan="2">PERCENTAGE</th>
+                                                    
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Active">Active</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Active">Active</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Used">Used</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Expire">Expire</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Active">Active</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Active">Active</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Used">Used</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zachary Parker</td>
+                                                        <td><div class="UimgName"><figure><img src="images/Avatar-1.png"></figure><span>Sandy Hills</span></div></td>
+                                                        <td>Rushroom1</td>
+                                                        <td>2023/03/12</td> 
+                                                        <td><span class="Expire">Expire</span></td>
+                                                        <td>10%</td>
+                                                        <td>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                  </div>
+                           
+                    </div>
+                </div>
+                <div class="PaginationArea">
+                    <span>Show 8 from 120 products</span>
+                    <div class="pagination">
+                        <i class="fa-solid fa-chevron-left left-chevron"></i>
+                        <div class="page-numbers">
+                          <button class="btn-page">1</button>
+                          <button class="btn-page">2</button>
+                          <button class="btn-page btn-selected">3</button>
+                          <button class="btn-page">4</button>
+                          <button class="btn-page">5</button>
+                          <button class="btn-page">6</button>
+                          <span class="dots">...</span>
+                          <button class="btn-page">12</button>
+                        </div>
+                        <i class="fa-solid fa-chevron-right right-chevron"></i>
+                      </div>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+
+
+  
+  <!-- Add Coupon Modal Start -->
+  <div class="addCouponModal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+           <div class="row">
+            <div class="col-lg-9 mx-auto">
+                <div class="modal-body">
+                    <h6>Create Coupon</h6>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control">
+                          <label>Coupon Code</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control">
+                          <label>Coupon Expire Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                            <label>Coupon Description</label>
+                          </div>
+                          <div class="form-group">
+                           <select>
+                            <option selected>Sandy Hill</option>
+                            <option>Sandy Hill</option>
+                            <option>Sandy Hill</option>
+                            <option>Sandy Hill</option>
+                            <option>Sandy Hill</option>
+                           </select>
+                           <label>Property Name</label>
+                           <i class="fa-solid fa-chevron-down"></i>
+                          </div>
+                          <div class="form-group">
+                            <select>
+                             <option selected>05</option>
+                             <option>10</option>
+                             <option>15</option>
+                             <option>20</option>
+                            </select>
+                            <label>Coupon Qty.</label>
+                            <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="form-group">
+                            <select>
+                             <option>5%</option>
+                             <option>10%</option>
+                             <option>15%</option>
+                             <option>20%</option>
+                             <option>25%</option>
+                            </select>
+                            <label>Percentage</label>
+                            <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <button type="button" class="submitBtn">Create Coupon</button>
+                    </form>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Add Coupon Modal End -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
