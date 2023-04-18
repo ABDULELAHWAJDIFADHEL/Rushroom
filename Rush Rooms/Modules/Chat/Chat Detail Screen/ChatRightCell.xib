@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatRightCell" rowHeight="240" id="KGk-i7-Jjw" customClass="ChatRightCell" customModule="Rush_Rooms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2s-cr-gSc">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="240"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-4d-DaH">
+                                <rect key="frame" x="86.333333333333343" y="8" width="273.66666666666663" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I feeling better than before. Should I need a haircut?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-yB-mdh">
+                                        <rect key="frame" x="18.999999999999986" y="12" width="235.66666666666663" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="WhiteCustomColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="emJ-yB-mdh" firstAttribute="leading" secondItem="gzT-4d-DaH" secondAttribute="leading" constant="19" id="LIh-bN-iG7"/>
+                                    <constraint firstAttribute="trailing" secondItem="emJ-yB-mdh" secondAttribute="trailing" constant="19" id="S9O-HP-Q0E"/>
+                                    <constraint firstAttribute="bottom" secondItem="emJ-yB-mdh" secondAttribute="bottom" constant="12" id="Srr-cB-NBJ"/>
+                                    <constraint firstItem="emJ-yB-mdh" firstAttribute="top" secondItem="gzT-4d-DaH" secondAttribute="top" constant="12" id="hek-uH-PXa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2023/03/12 08:22 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJp-NN-ZHF">
+                                <rect key="frame" x="86.333333333333314" y="57" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="LightGrayCustomColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundCustomColor"/>
+                        <constraints>
+                            <constraint firstItem="gzT-4d-DaH" firstAttribute="top" secondItem="d2s-cr-gSc" secondAttribute="top" constant="8" id="2ey-MY-Vel"/>
+                            <constraint firstItem="gzT-4d-DaH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d2s-cr-gSc" secondAttribute="leading" constant="60" id="BaO-iH-dYd"/>
+                            <constraint firstAttribute="bottom" secondItem="HJp-NN-ZHF" secondAttribute="bottom" constant="16" id="FWe-wM-OXd"/>
+                            <constraint firstItem="HJp-NN-ZHF" firstAttribute="top" secondItem="gzT-4d-DaH" secondAttribute="bottom" constant="8" id="s7j-9y-T9E"/>
+                            <constraint firstAttribute="trailing" secondItem="gzT-4d-DaH" secondAttribute="trailing" constant="34" id="vnS-BC-ZOU"/>
+                            <constraint firstItem="HJp-NN-ZHF" firstAttribute="leading" secondItem="gzT-4d-DaH" secondAttribute="leading" id="zCe-5e-1bO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d2s-cr-gSc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OIG-dm-593"/>
+                    <constraint firstItem="d2s-cr-gSc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TkI-o9-8xa"/>
+                    <constraint firstAttribute="bottom" secondItem="d2s-cr-gSc" secondAttribute="bottom" id="b4x-mY-StN"/>
+                    <constraint firstAttribute="trailing" secondItem="d2s-cr-gSc" secondAttribute="trailing" id="eBU-df-HbW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="msgVw" destination="gzT-4d-DaH" id="Ljy-Pg-Hi6"/>
+                <outlet property="rightMsgLbl" destination="emJ-yB-mdh" id="Iks-SE-bdc"/>
+                <outlet property="rightTimeLbl" destination="HJp-NN-ZHF" id="W81-S0-6ob"/>
+            </connections>
+            <point key="canvasLocation" x="67.175572519083971" y="-33.802816901408455"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundCustomColor">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayCustomColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteCustomColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

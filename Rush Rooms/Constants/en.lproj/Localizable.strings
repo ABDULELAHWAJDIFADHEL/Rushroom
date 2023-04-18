@@ -1,0 +1,234 @@
+/* 
+  Localizable.strings
+  Helper Class
+
+  Created by Krishanvir on 29/03/22.
+  
+*/
+
+// MARK: - Error Texts
+OFFILINE_INTERNET = "There is no internet connection. Please try again later.";
+ERROR_OCCURED = "There is some error occured. Please try again later.";
+ERROR = "Error!";
+SUCCESS = "Success!";
+ALERT = "Alert!";
+
+
+
+
+
+//MARK: - Navigation Title
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - COMMON
+
+ENGLISH                        =        "English";
+ARABIC                         =        "Arabic";
+RUPEES                         =        "INR";
+USD                            =        "USD";
+
+CANCEL                         =        "Cancel";
+OK                             =        "Ok";
+SELECT_DOB                     =        "Select Date of Birth";
+MALE                           =        "Male";
+FEMALE                         =        "Female";
+OTHER                          =        "Other";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - PLACE HOLDER
+
+//Sign Up
+FIRST_NAME                      =       "First Name";
+ENTER_FIRST_NAME                =       "Enter First Name";
+LAST_NAME                       =       "Last Name";
+ENTER_LAST_NAME                 =       "Enter Last Name";
+MOBILE_NUMBER                   =       "Mobile Number";
+ENTER_MOBILE_NUMBER             =       "Enter Mobile Number";
+COUNTRY_REGION                  =       "Country/Region";
+
+//SignUp Add Info
+EMAIL                           =       "Email";
+ENTER_EMAIL                     =       "Enter Email";
+USERNAME                        =       "Username";
+ENTER_USERNAME                  =       "Enter Username";
+DOB                             =       "Date of Birth";
+GENDER                          =       "Gender";
+PASSWORD                        =       "Password";
+ENTER_PASSWORD                  =       "Enter Password";
+CONFIRM_PASSWORD                =       "Confirm Password";
+ENTER_CONFIRM_PASSWORD          =       "Enter Confirm Password";
+
+//Change Password
+CURRENT_PASSWORD                =       "Current Password";
+ENTER_CURRENT_PASSWORD          =       "Enter Current Password";
+NEW_PASSWORD                    =       "New Password";
+ENTER_NEW_PASSWORD              =       "Enter New Password";
+
+//Profile
+FULL_NAME                       =       "Full Name";
+ENTER_FULL_NAME                 =       "Enter Full Name";
+NATIONALITY                     =       "Nationality";
+NATIONAL_ID_NUMBER              =       "National ID Number";
+ENTER_NATIONAL_ID_NUMBER        =       "Enter National ID Number";
+EXPIRY_DATE                     =       "Expiry Date";
+REFERAL_CODE                    =       "Referral Code";
+ENTER_REFERAL_CODE              =       "Enter Referral Code";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARK: -  Alert Message
+
+//Sign Up
+EMPTY_FIRST_NAME                =       "Please enter first name";
+EMPTY_LAST_NAME                 =       "Please enter last name";
+EMPTY_COUNTRY                   =       "please select country/Region";
+EMPTY_PHONE_NUMBER              =       "Please enter phone number";
+EMPTY_EMAIL                     =       "Please enter email";
+INVALID_EMAIL                   =       "Your email is incorrect";
+EMPTY_USERNAME                  =       "Please enter username";
+EMPTY_DOB                       =       "Please select date of Birth";
+EMPTY_GENDER                    =       "Please select gender";
+EMPTY_PASSWORD                  =       "Please enter password";
+INVALID_PASSWORD                =       "Your password is incorrect";
+EMPTY_CONFIRM_PASSWORD          =       "Please enter confirm password";
+INVALID_CONFIRM_PASSWORD        =       "Your confirm password is incorrect";
+UNEQUAL_PASSWORD                =       "Password and confirm password should be same";
+EMPTY_OTP                       =       "Please enter otp";
+
+
+
+
+
+
+
+
+
+
+
+
+// MARK: - Constants texts
+
+//Language
+LANGUAGE_TITLE                  =       "Welcome to Rush Rooms";
+LANGUAGE_SUB_TITLE              =       "Select your language";
+CONFIRM                         =       "Confirm";
+
+//Splash
+SPLASH_TITLE_ONE                =       "Find your best Hotel to stay";
+SPLASH_TITLE_TWO                =       "Best apartment and hotel booking";
+SPLASH_TITLE_THREE              =       "Enjoy your holiday time";
+SPLASH_SUB_TITLE                =       "Adipiscing vitae, id non vitae, elementum, purus fermentum. Mus aliquam pellentesque";
+
+//Welcome
+LETS_GET                        =       "Let's get";
+STARTED                         =       "started";
+SIGN_UP                         =       "Sign Up";
+ALREADY_HAVE_ACCOUNT            =       "Already have an account?";
+LOGIN                           =       "Log In";
+WELCOME_SUB_TITLE               =       "Login to your account below or signup for an amazing experience";
+
+//SignUp
+SIGN_UP_PHONE_NO                =       "SignUp Via Phone No.";
+SIGN_UP_EMAIL                   =       "SignUp Via Email";
+SIGN_UP_TITLE                   =       "Create an account";
+SIGN_UP_SUB_TITLE               =       "Let’s us know what your name, email, and your password";
+CONTINUE_BTN                    =       "Continue";
+COUNTRY_CODE_MSG                =       "Select a Country For Rush Rooms";
+SIGN_UP_ADD_INFO_TITLE          =       "Add your info";
+
+//Reset password / Forgot Password
+RESET_PASSWORD                  =       "Reset Password";
+RESET                           =       "Reset";
+VERIFY_TITLE                    =       "Successfully Changed";
+LOGIN_AGAIN                     =       "Login again";
+VERIFY_SUB_TITLE                =       "Your password was Successfully Changed
+ Close this window and login again";
+FORGOT_PASSWORD                 =       "Forgot password?";
+FORGOT_SUB_TITLE_EMAIL          =       "Enter the Email address associated with your account";
+FORGOT_SUB_TITLE_PHONE          =       "Enter the phone number associated with your account";
+RESET_VIA_EMAIL                 =       "Reset via Email";
+RESET_VIA_PHONE_NO              =       "Reset via Phone No.";
+BACK                            =       "Back";
+VERIFY_FROM_CHANGE_PASSWORD     =       "Your password was Successfully Changed";
+
+//Login
+LOGIN_TITLE                     =       "Welcome back";
+LOGIN_VIA_EMAIL_SUB_TITLE       =       "Sign in with your email and password";
+LOGIN_VIA_PHONE_SUB_TITLE       =       "Sign in with your mobile  and get OTP";
+LOGIN_VIA_USERNAME_SUB_TITLE    =       "Sign in with your username and password";
+LOGIN_WITH_PHONE_NO             =       "Login With Mobile Number";
+LOGIN_WITH_USERNAME             =       "Login With Username";
+LOGIN_WITH_EMAIL                =       "Login With Email";
+SEND_OTP                        =       "Send OTP";
+SIGN_UP_SUCCESSFULL             =       "Sign Up Successfull!";
+
+//OTP Verification
+SUBMIT                          =       "Submit";
+CONFIRM_EMAIL                   =       "Confirm Your Email";
+CONFIRM_PHONE_NO                =       "Confirm Your Mobile";
+RESEND                          =       "Resend";
+OTP_SUB_TITLE                   =       "Enter the code we've sent to -";
+HAVE_NOT_RECIEVED_CODE          =       "haven't received a code?";
+
+//NOTIFICATION
+MUTE_NOTIFICATION               =       "Mute Notification";
+CLEAR_ALL                       =       "Clear All";
+
+//HOME
+HI                              =       "Hi ";
+
+
+
+
+
+
+
+
+
+//Booking
+ACTIVE                          =        "Active";
+PENDING                         =        "Pending";
+CANCELLED                       =        "Cancelled";
+COMPLETED                       =        "Completed";

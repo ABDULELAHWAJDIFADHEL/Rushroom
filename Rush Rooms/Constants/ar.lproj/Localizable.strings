@@ -1,0 +1,199 @@
+/*
+  Localizable.strings
+  Helper Class
+
+  Created by Krishanvir on 29/03/22.
+  
+*/
+
+// MARK: - Error Texts
+OFFILINE_INTERNET = "There is no internet connection. Please try again later.";
+ERROR_OCCURED = "There is some error occured. Please try again later.";
+ERROR = "Error!";
+SUCCESS = "Success!";
+ALERT = "Alert!";
+
+
+
+
+
+//MARK: - Navigation Title
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - COMMON
+
+ENGLISH                        =        "AEnglishA";
+ARABIC                         =        "AArabicA";
+
+
+CANCEL                         =        "ACancelA";
+OK                             =        "AOkA";
+SELECT_DOB                     =        "ASelect Date of BirthA";
+MALE                           =        "AMaleA";
+FEMALE                         =        "AFemaleA";
+OTHER                          =        "AOtherA";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - PLACE HOLDER
+
+//Sign Up
+FIRST_NAME                      =       "AFirst NameA";
+ENTER_FIRST_NAME                =       "AEnter First NameA";
+LAST_NAME                       =       "ALast NameA";
+ENTER_LAST_NAME                 =       "AEnter Last NameA";
+MOBILE_NUMBER                   =       "AMobile NumberA";
+ENTER_MOBILE_NUMBER             =       "AEnter Mobile NumberA";
+COUNTRY_REGION                  =       "ACountry/RegionA";
+
+//SignUp Add Info
+EMAIL                           =       "AEmailA";
+ENTER_EMAIL                     =       "AEnter EmailA";
+USERNAME                        =       "AUsernameA";
+ENTER_USERNAME                  =       "AEnter UsernameA";
+DOB                             =       "ADate of BirthA";
+GENDER                          =       "AGenderA";
+PASSWORD                        =       "APasswordA";
+ENTER_PASSWORD                  =       "AEnter PasswordA";
+CONFIRM_PASSWORD                =       "AConfirm PasswordA";
+ENTER_CONFIRM_PASSWORD          =       "AEnter Confirm PasswordA";
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARK: -  Alert Message
+
+//Sign Up
+EMPTY_FIRST_NAME                =       "APlease Enter First NameA";
+EMPTY_LAST_NAME                 =       "APlease Enter Last NameA";
+EMPTY_COUNTRY                   =       "Aplease Select Country/RegionA";
+EMPTY_PHONE_NUMBER              =       "APlease Enter Phone NumberA";
+EMPTY_EMAIL                     =       "APlease Enter EmailA";
+INVALID_EMAIL                   =       "AYour Email is IncorrectA";
+EMPTY_USERNAME                  =       "APlease Enter UsernameA";
+EMPTY_DOB                       =       "APlease Select Date of BirthA";
+EMPTY_GENDER                    =       "APlease Select GenderA";
+EMPTY_PASSWORD                  =       "APlease Enter PasswordA";
+INVALID_PASSWORD                =       "AYour Password is IncorrectA";
+EMPTY_CONFIRM_PASSWORD          =       "APlease Enter Confirm PasswordA";
+INVALID_CONFIRM_PASSWORD        =       "AYour Confirm Password is IncorrectA";
+UNEQUAL_PASSWORD                =       "APassword and Confirm Password should be sameA";
+
+
+
+
+
+
+
+
+
+
+
+
+// MARK: - Constants texts
+
+//Language
+LANGUAGE_TITLE                  =       "AWelcome to Rush RoomsA";
+LANGUAGE_SUB_TITLE              =       "ASelect your languageA";
+
+//Splash
+SPLASH_TITLE_ONE                =       "AFind your best Hotel to stayA";
+SPLASH_TITLE_TWO                =       "ABest apartment and hotel bookingA";
+SPLASH_TITLE_THREE              =       "AEnjoy your holiday timeA";
+SPLASH_SUB_TITLE                =       "AAdipiscing vitae, id non vitae, elementum, purus fermentum. Mus aliquam pellentesqueA";
+
+//Welcome
+LETS_GET                        =       "ALet's getA";
+STARTED                         =       "AstartedA";
+SIGN_UP                         =       "ASign UpA";
+ALREADY_HAVE_ACCOUNT            =       "AAlready have an account?A";
+LOGIN                           =       "ALog InA";
+WELCOME_SUB_TITLE               =       "ALogin to your account below or signup for an amazing experienceA";
+
+//SignUp
+SIGN_UP_PHONE_NO                =       "ASignUp Via Phone No.A";
+SIGN_UP_EMAIL                   =       "ASignUp Via EmailA";
+SIGN_UP_TITLE                   =       "ACreate an accountA";
+SIGN_UP_SUB_TITLE               =       "ALet’s us know what your name, email, and your passwordA";
+CONTINUE_BTN                    =       "AContinueA";
+COUNTRY_CODE_MSG                =       "ASelect a Country For Rush RoomsA";
+SIGN_UP_ADD_INFO_TITLE          =       "AAdd your infoA";
+
+//Reset password / Forgot Password
+RESET_PASSWORD                  =       "AReset PasswordA";
+RESET                           =       "AResetA";
+VERIFY_TITLE                    =       "ASuccessfully ChangedA";
+LOGIN_AGAIN                     =       "ALogin againA";
+VERIFY_SUB_TITLE                =       "AYour password was Successfully Changed
+ Close this window and login againA";
+FORGOT_PASSWORD                 =       "AForgot password?A";
+FORGOT_SUB_TITLE_EMAIL          =       "AEnter the Email associated with your accountA";
+FORGOT_SUB_TITLE_PHONE          =       "AEnter the phone number associated with your accountA";
+RESET_VIA_EMAIL                 =       "AReset via EmailA";
+RESET_VIA_PHONE_NO              =       "AReset via Phone No.A";
+
+//Login
+LOGIN_TITLE                     =       "AWelcome backA";
+LOGIN_VIA_EMAIL_SUB_TITLE       =       "ASign in with your email and passwordA";
+LOGIN_VIA_PHONE_SUB_TITLE       =       "ASign in with your mobile  and get OTPA";
+LOGIN_VIA_USERNAME_SUB_TITLE    =       "ASign in with your username and passwordA";
+LOGIN_WITH_PHONE_NO             =       "ALogin With Mobile NumberA";
+LOGIN_WITH_USERNAME             =       "ALogin With UsernameA";
+LOGIN_WITH_EMAIL                =       "ALogin With EmailA";
+SEND_OTP                        =       "ASend OTPA";
+
+//OTP Verification
+SUBMIT                          =       "ASubmitA";
+CONFIRM_EMAIL                   =       "AConfirm Your EmailA";
+CONFIRM_PHONE_NO                =       "AConfirm Your MobileA";
+RESEND                          =       "AResendA";
+OTP_SUB_TITLE                   =       "AEnter the code we've sent to -A";
+HAVE_NOT_RECIEVED_CODE          =       "Ahaven't received a code?A";
+
+
+
+
+
+
+
+
+
+
+
+//Booking
+ACTIVE                          =        "AActiveA";
+PENDING                         =        "APendingA";
+CANCELLED                       =        "ACancelledA";
+COMPLETED                       =        "ACompletedA";
