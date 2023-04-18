@@ -1,0 +1,314 @@
+/* 
+  Localizable.strings
+  Catalyist
+
+  Created by Call Soft on 29/03/22.
+  
+*/
+
+// MARK: - Constant Text
+OFFILINE_INTERNET = "Es besteht keine Internetverbindung. Bitte versuchen Sie es später erneut.";
+ERROR_OCCURED = "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+ERROR = "Fehler!";
+SUCCESS = "Erfolg!";
+
+OK = "Ok";
+CANCEL = "Absagen";
+CUSTOM_TEXT = "Brauch ";
+DONE = "Fertig";
+FORGET_PASSWORD = "Passwort vergessen";
+FORGOT = "Vergessen ";
+NEW_USER_SIGN_UP = "Neuer Benutzer? Anmeldung";
+NEW_USER = "Neuer Benutzer? ";
+SIGNUP = "Anmeldung";
+EXISTING_USER_SIGN_IN = "Existierender Benutzer? Einloggen";
+EXISTING_USER = "Existierender Benutzer? ";
+SIGN_IN = "Einloggen";
+VERIFICATION_EMAIL = "Bestätigungscode in Ihrer E-Mail";
+VERIFICATION_EMAIL_ID = "Wir senden einfach den 4-stelligen Code an Ihre registrierte E-Mail";
+CHECK_EMAIL = "Überprüfen Sie Ihren Posteingang";
+SENT_PASSWORD = "Wir haben eine Anleitung zur Wiederherstellung des Passworts an Ihre E-Mail gesendet";
+PASSWORD_RESET_DONE = "Passwort zurücksetzen Fertig!";
+PASSWORD_UPDATE = "Dein Passwort wurde aktualisiert";
+RESET_PASSWORD = "Passwort zurücksetzen";
+ENABLE_LOCATION = "Bitte aktivieren Sie Standorte, um Ihren Standort zu verfolgen.";
+LOG_OUT = "Sind Sie sicher, dass Sie sich abmelden möchten?";
+DONT_HAVE_CAMERA = "Du hast keine Kamera";
+WARNING = "Warnung!";
+SELECTTOUPLOAD = "Zum Hochladen auswählen";
+CAMERA = "Kamera";
+CHOOSE = "Wählen";
+DOB = "Geburtsdatum";
+RELATION = "Beziehung";
+TASK_NAME = "Aufgabennname";
+DESCRIPTION = "Beschreibung";
+ASSIGN_TOO = "Zuweisen";
+PRIORITY = "Priorität";
+START_DATE = "Anfangsdatum";
+END_DATE = "Endtermin";
+START_TIME = "Startzeit";
+END_TIME = "Endzeit";
+ENTER_REWARD_POINT = "Prämienpunkt eingeben";
+GALLERY = "Galerie";
+REPEAT = "Wiederholen";
+YES = "Ja";
+NO = "Nein";
+FAMILY_MEMBER = "Familienmitglied";
+PRIORITY_TASK = "Aufgabenpriorität";
+THEME = "Thema";
+REWARD_POINTS = "Belohnungspunkt";
+CONGRATULATION = "Herzliche Glückwünsche!";
+
+
+//NAVIGATION CONTROLLER TITLE
+
+MY_PROFILE = "Mein profil";
+SETTING = "Einstellungen";
+CHANGE_LANGUAGE = "Sprache ändern";
+ABOUT_US = "Über uns";
+TERMS_CONDITION = "Bedingungen und Konditionen";
+PRIVACY_POLICY = "Datenschutzbestimmungen";
+CONTACT_US = "Kontakt";
+PROFILE = "profil";
+CHANGE_PASSWORD = "Passwort ändern";
+NOTIFICATIONS = "Benachrichtigung";
+PRODUCT_DETAILS = "Details zum Produkt";
+MY_BASKETS = "Mein Warenkorb";
+BUY_CREDITS =  "Kredite kaufen";
+PAYMENT_CONFIRMATION =  "Bestätigung der Zahlung";
+MY_CART = "Mein Warenkorb";
+
+
+
+// MARK: - Alert Message
+ENTER_YOUR_NAME = "Bitte geben Sie Ihren Namen ein";
+ENTER_YOUR_EMAIL = "Bitte geben Sie Ihre E-Mail-ID ein";
+ENTER_CORRECT_EMAIL ="Ungültige E-Mail-ID";
+ENTER_PASSWORD = "Bitte Passwort eingeben.";
+ENTER_YOUR_MOBILE = "Bitte geben sie ihre Mobiltelefonnummer ein";
+ENTER_YOUR_PASSWORD = "Bitte geben Sie Ihr Passwort ein";
+ENTER_NEW_PASSWORD = "Bitte geben Sie Ihr neues Passwort ein";
+ENTER_CONFIRM_PASSWORD = "Bitte geben Sie Ihr Bestätigungspasswort ein";
+ENTER_CORRECT_MOBILE = "Ungültige Telefon-nummer";
+ENTER_CORRECT_PASSWORD = "Passwort (Mindestens 8 Zeichen";
+ENTER_CORRECT_CONFIR_PASSWORD = "Bestätigen Sie das Passwort mindestens 8 Zeichen";
+ENTER_CORRECT_NEW_PASSWORD = "Neues Passwort mindestens 8 Zeichen";
+PASSWORD_NOT_MATCH = "Passwort & Passwort bestätigen sollten gleich sein";
+NEW_PASSWORD_NOT_MATCH = "Passwort nicht gleich";
+INVALID_CREDENTIAL = "Ungültige Anmeldeinformationen";
+IMAGE_UPLOAD_SUCCESSFULLY = "Bild erfolgreich hochgeladen";
+The_mobile_number_has_already_been_taken = "Die Handynummer ist bereits vergeben";
+You_don_have_enough_credit      =   "Ihr Guthaben reicht nicht aus, um den Preis anzuzeigen. Klicken Sie auf OK, um Credits zu kaufen.";
+ALERT = "Alarm";
+
+// MARK: - Placeholder Text
+ENTER_NEW_PASSWORD = "Neues Passwort eingeben";
+CREATE_NEW_PASSWORD = "Neues Passwort erstellen";
+
+
+//LOGIN
+ENTER_EMAIL_ID = "Geben Sie Ihre E-Mail Adresse ein";
+ENTER_PASSWORD_HERE = "Geben Sie hier Ihr Passwort ein";
+
+
+//PERSONAL DETAIL
+ENTER_FULL_NAME    =    "Vollständigen Namen eingeben";
+ENTER_MOBILE_NUMBER     =   "Handynummer einfügen";
+ENTER_CONFIRM_PASSWORD_HERE     =   "Geben Sie hier Ihre Passwortbestätigung ein";
+ENTER_PHONE_NUMBER  = "Bitte geben Sie Ihre Telefonnummer ein";
+ENTER_OLD_PASSWORD  =  "Altes Passwort eingeben";
+ENTER_BASKET_NAME = "Geben Sie den Baskst-Namen ein";
+Please_enter_basket_name  = "Bitte Warenkorbname eingeben!";
+
+
+//MARK: - KSTRING
+
+
+//LOGIN
+
+ENGLISH                                         =   "Englisch";
+CZECH                                           =   "Tschechisch";
+GERMAN                                          =   "Deutsch";
+LOGIN_ACCOUNT                                   =   "Konto-Anmeldung";
+EMAIL_ADDRESS                                   =   "E-Mail Adresse";
+PASSWORD                                        =   "Passwort";
+SELECT_LANGUAGE                                 =   "Sprache auswählen";
+OR_CONTINUE_WITH                                =   "Oder weiter mit";
+FORGOT_PASSWORD                                 =   "Sie haben Ihr Passwort vergessen";
+LOGIN                                           =   "Einloggen";
+DONT_HAVE_ACCOUNT                               =   "Sie haben noch kein Konto?";
+REGISTER_ACCOUNT                                =   "Ein Konto registrieren";
+
+//SIGNUP
+I_ACCEPT_ALL_THE                                =   "Ich akzeptiere alle";
+TERMS_CONDITION                                 =   "Bedingungen und Konditionen";
+REGISTER                                        =   "Registrieren Sie sich";
+ALREADY_ACCOUNT                                 =   "Sie haben bereits ein Konto";
+
+
+//PERSONAL DETAILS
+PERSONAL_DETAILS                                =   "Persönliche Daten";
+FULL_NAME                                       =   "Vollständiger Name";
+MOBILE_NUMBER                                   =   "Nummer des Mobiltelefons";
+AT_LEAST_CHARACTERS                             =   "Mindestens 8 Zeichen";
+CONFIRM_PASSWORD                                =   "Bestätigen Sie das Passwort";
+
+//VERIFICATION
+VERIFICATION                                    =   "Überprüfen Sie";
+DONE                                            =   "Erledigt";
+VERIFICATION_STATUS                             =   "Sie haben einen Verifizierungslink an Ihre E-Mail-Adresse geschickt bekommen. Klicken Sie darauf, um Ihr Konto zu verifizieren.";
+
+
+//RESET PASSWORD
+RESET_PASSWORD                                  =   "Passwort zurücksetzen";
+BACK_TO_LOGIN                                   =   "Zurück zur Anmeldung";
+RESET_PASSWORD_STATUS                           =   "Ein Link zum Zurücksetzen Ihres Passworts wurde an Ihre E-Mail-Adresse gesendet.";
+
+
+//FORGOT PASSWORD
+FORGOT_PASSWORD_STATUS                          =   "Wir werden Ihnen einen Link zum Zurücksetzen Ihres Passworts an Ihre E-Mail-Adresse senden.";
+SEND_LINK                                       =   "Link senden";
+
+
+//HOME
+PGM_MARKET_PRICES                               =   "PGM-Marktpreis";
+AVAILABLE_CREDITS                               =   "Verfügbare Kredite";
+BUY_CREDIT                                      =   "Kredite kaufen";
+SEARCH_YOUR_REFERENCES                          =   "Suchen Sie nach der Nummer auf dem Katalysator.";
+ENTER_CATALYST_NUMBER                           =   "Katalysatornummer eingeben";
+SELECT_BRAND                                    =   "Wählen Sie Marke aus";
+SELECT_TYPE                                     =   "Typ auswählen";
+FROM                                            =   "Sortierung";
+SEARCH                                          =   "Abgerufen von";
+MOST_POPULAR_CATALYST                           =   "Die beliebtesten Katalysatoren";
+SELECT_FROM                                     =   "Wählen Sie aus";
+BRANDS                                          =   "Marken";
+TYPE                                            =   "Typ";
+SELECT_REFERENCE                                =   "Zum Beispiel: GM 28";
+VIEW_DETAIL                                     =   "Details anzeien";
+ALL                                             =   "Snadard";
+OUR_CATALOG                                     =   "Unser Katalog";
+
+
+//BUY CREDIT
+PROCEED_TO_PURCHASE                             =   "Zum Kauf gehen";
+SELECT_PLAN_PURCHASE                            =   "Wählen Sie die Art des Kaufs";
+NO_OF_CREDIT                                    =   "Anzahl der Kredite";
+SELECTED_PLAN                                   =   "Ausgewählter Plan";
+PAYMENT_DETAILS                                 =   "Details zur Bezahlung";
+PRICE_OF_CREDITS                                =   "Preis der Kredite";
+TOTAL                                           =   "Total";
+CONTINUE_TO_PAY                                 =   "Weiter zur Zahlung";
+CREDIT_SPACE                                    =   " Kredit";
+CREDIT                                          =   "Kredit";
+
+
+//PRODUCT DETAILS
+PRICE                                           =   "Preis";
+VIEW_PRICE                                      =   "Preis anzeigen";
+SELECT_QUANTITY                                 =   "Menge auswählen";
+BRAND_NAME                                      =   "Marke";
+PRODUCT_TYPE                                    =   "Katalysatortyp";
+REFERENCE                                       =   "Katalysatornummer";
+PRODUCT_DESCRIPTION                             =   "Beschreibung des Produkts";
+CONTAIN_METAL                                   =   "Enthaltene Metalle";
+ADD_TO_CART                                     =   "In den Warenkorb geben";
+
+
+//SETTING
+LOGOUT                                          =   "Abmelden";
+TAP_TO_DETAIL                                   =   "Klicken für Details";
+TAP_TO_CHANGE_LANGUAGE                          =   "Zum Ändern der Sprache anklicken";
+
+
+
+//CHANGE PASSWORD
+OLD_PASSWORD                                    =   "Altes Passwort";
+CREATE_NEW_PASSWORD                             =   "Ein neues Passwort erstellen";
+UPDATE_PASSWORD                                 =   "Passwort aktualisieren";
+NOTIFICATION                                    =   "Benachrichtigung";
+CHANGE_PASSWORD                                 =   "Passwort ändern";
+TURN_OFF_PUSH_NOTIFICATION                      =   "Pop-up-Benachrichtigung deaktivieren";
+TAP_TO_CHANGE_PASSWORD                          =   "Klicken Sie, um Ihr Passwort zu ändern";
+
+
+//PROFILE
+TAP_TO_EDIT                                     =   "Klicken Sie zum Bearbeiten";
+ACCOUNT_DETAIL                                  =   "Detail zum Konto";
+PHONE_NUMBER                                    =   "Rufnummer";
+SAVE_CHANGE                                     =   "Änderungen speichern";
+
+
+//BASKET
+AVAILABLE_BASKET                                =   "Verfügbare Artikel in Ihrem Warenkorb";
+CREATE_NEW_BASKET                               =   "Einen neuen Warenkorb erstellen";
+ALL_BASKET                                      =   "Alle Körbe anzeigen";
+PRICE_BREAKUP                                   =   "Die Preisliste";
+SAVE                                            =   "Speichern Sie";
+PIECE                                           =   " Stücke";
+DATA_NOT_FOUND                                  =   "Daten nicht gefunden";
+
+
+//CONTACT US
+COPIED_TO_CLIPBOARD                             =   "In die Zwischenablage kopiert";
+COMPANY_NUMBER                                  =   "Firmennummer";
+COMPANY_ADDRESS                                 =   "Firmenanschrift";
+WEBSITE_LINK                                    =   "Website-Link";
+EMAIL_ID                                        =   "E-Mail-ID";
+ARE_YOU_SURE_TO_LOGOUT                          =   "Möchten Sie sich wirklich abmelden?";
+YES_ITS_CORRECT                                 =   "Ja das ist richtig";
+
+//BASKET
+BASKET_NAME                                     =   "Korbname";
+PLEASE_SELECT_CARD                              =   "Bitte Karte auswählen";
+
+
+
+//ALERT RESPONSE
+Item_removed_successfully                        =   "Artikel erfolgreich entfernt";
+Cart_updated_successfully                        =   "Warenkorb erfolgreich aktualisiert";
+Updated_successfully                             =   "Erfolgreich aktualisiert";
+Metal_Price_feteched_successfully                =   "Metallpreis erfolgreich geladen";
+Basket_Removed_Successfully                      =   "Warenkorb erfolgreich gelöscht";
+Credit_retrieved_successfully                    =   "Kredit erfolgreich geladen";
+Credit_purchased_successfully                    =   "Kredit erfolgreich gekauft";
+New_user                                         =   "Neuer Benutzer";
+Catalyst_prices_retrieved_successfully           =   "Katalysatorpreise erfolgreich geladen";
+Profile_completed_successfully_SocialRegister    =   "Das Profil wurde erfolgreich abgeschlossen.";
+email_available                                  =   "Verfügbare E-Mail";
+This_email_id_already_exists                     =   "Diese E-Mail existiert bereits";
+Your_verification_process_is_pending             =   "Ihr Verifizierungsprozess ist im Gange.";
+Verified                                         =   "Verifiziert";
+Not_verified                                     =   "Nicht verifiziert";
+Profile_completed_successfully                   =   "Das Profil wurde erfolgreich abgeschlossen. ";
+Profile_updated_successfully                     =   "Das Profil wurde erfolgreich aktualisiert.";
+Mobile_number_available                          =   "Die Mobilnummer ist verfügbar.";
+Unauthenticated                                  =   "Nicht verifiziert.";
+Unauthorised                                     =   "Nicht autorisiert";
+This_mobile_number_already_exists                =   "Diese Handynummer existiert bereits";
+User_login_successfully                          =   "Benutzeranmeldung war erfolgreich";
+Notification_status_updated_successfully         =   "Benachrichtigungsstatus erfolgreich aktualisiert.";
+Password_updated_successfully                    =   "Das Passwort wurde erfolgreich aktualisiert.";
+The_new_password_and_confirm_password_must_match =   "Das neue Passwort und die Passwortbestätigung müssen übereinstimmen.";
+Logout_successfully                              =   "Abmeldung war erfolgreich";
+User_detail_retrieved_successfully               =   "Benutzerdaten erfolgreich abgerufen";
+Catalyst_detail_retrieved_successfully           =   "Catalyst-Detail erfolgreich geladen";
+Catalyst_retrieved_successfully                  =   "Catalyst-Detail erfolgreich geladen";
+Basket_fetched_successfully                      =   "Warenkorb erfolgreich erstellt";
+Added_in_cart_successfully                       =   "Erfolgreich in den Warenkorb gelegt";
+Cart_item_fetched_successfully                   =   "Warenkorbliste erfolgreich geladen";
+Basket_created_successfully                      =   "Warenkorb erfolgreich erstellt";
+The_mobile_has_already_been_taken                =   "Das Handy wurde bereits entwendet.";
+Notification_list_retrieved_successfully         =   "Benachrichtigungsliste erfolgreich abgerufen";
+Basket_PDF_successfully                          =   "Warenkorb PDF erfolgreich";
+Email_send_successfully                          =   "E-Mail erfolgreich gesendet";
+Please_complete_your_profile_your_profile_is_not_complete     =   "Bitte vervollständigen Sie Ihr Profil, Ihr Profil ist nicht vollständig.";
+Verification_link_has_been_sent_on_your_email_address         =   "Ein Verifizierungslink wurde an Ihre E-Mail-Adresse gesendet.";
+Reset_Password_link_has_been_sent_to_your_email_id            =   "Der Link zum Zurücksetzen des Passworts wurde an Ihre E-Mail-Adresse gesendet!";
+
+
+
+FROM_THE_CHEAPEST                               =   "vom billigsten";
+FROM_THE_HIGHEST                                =   "vom höchsten Preis";
+
+

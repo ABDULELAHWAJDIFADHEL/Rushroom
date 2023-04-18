@@ -1,0 +1,309 @@
+/* 
+  Localizable.strings
+  Catalyist
+
+  Created by Call Soft on 29/03/22.
+  
+*/
+
+// MARK: - Constant Text
+OFFILINE_INTERNET = "Není zde připojení k internetu. Prosím zkuste to znovu později.";
+ERROR_OCCURED = "Došlo k nějaké chybě. Prosím zkuste to znovu později.";
+ERROR = "Chyba!";
+SUCCESS = "Úspěch!";
+
+OK = "Ok";
+CANCEL = "Ne, nechci se odhlásit.";
+CUSTOM_TEXT = "Zvyk ";
+DONE = "Hotovo";
+FORGET_PASSWORD = "Zapomenout heslo";
+FORGOT = "Zapomněl jsem ";
+NEW_USER_SIGN_UP = "Nový uživatel? Přihlásit se";
+NEW_USER = "Nový uživatel? ";
+SIGNUP = "Přihlásit se";
+EXISTING_USER_SIGN_IN = "Existující uživatel? Přihlásit se";
+EXISTING_USER = "Existující uživatel? ";
+SIGN_IN = "Přihlásit se";
+VERIFICATION_EMAIL = "Ověřovací kód ve vašem e-mailu";
+VERIFICATION_EMAIL_ID = "Zašleme pouze 4místný kód na váš registrovaný e-mail";
+CHECK_EMAIL = "Zkontroluj si email";
+SENT_PASSWORD = "Na váš e-mail jsme zaslali pokyny k obnovení hesla";
+PASSWORD_RESET_DONE = "Obnovení hesla Hotovo!";
+PASSWORD_UPDATE = "Vaše heslo bylo aktualizováno";
+RESET_PASSWORD = "Obnovit heslo";
+ENABLE_LOCATION = "Chcete-li sledovat svou polohu, povolte umístění.";
+LOG_OUT = "Opravdu se chcete odhlásit?";
+DONT_HAVE_CAMERA = "Nemáte fotoaparát";
+WARNING = "Varování!";
+SELECTTOUPLOAD = "Vyberte pro nahrání";
+CAMERA = "Fotoaparát";
+CHOOSE = "Vybrat";
+DOB = "Datum narození";
+RELATION = "Vztah";
+TASK_NAME = "Název úkolu";
+DESCRIPTION = "Popis";
+ASSIGN_TOO = "Přiřadit";
+PRIORITY = "Přednost";
+START_DATE = "Počáteční datum";
+END_DATE = "Datum ukončení";
+START_TIME = "Doba spuštění";
+END_TIME = "Čas ukončení";
+ENTER_REWARD_POINT = "Zadejte bod odměny";
+GALLERY = "Galerie";
+REPEAT = "Opakovat";
+YES = "Ano";
+NO = "Ne";
+FAMILY_MEMBER = "Rodinný příslušník";
+PRIORITY_TASK = "Priorita úkolu";
+THEME = "Téma";
+REWARD_POINTS = "Bod odměny";
+CONGRATULATION = "Gratulujeme!";
+
+
+
+//NAVIGATION CONTROLLER TITLE
+
+MY_PROFILE = "Můj profil";
+SETTING = "Nastavení";
+CHANGE_LANGUAGE = "Změnit jazyk";
+ABOUT_US = "O nás";
+TERMS_CONDITION = "Pravidla a podmínky";
+PRIVACY_POLICY = "Zásady ochrany osobních údajů";
+CONTACT_US = "Kontaktujte nás";
+PROFILE = "profil";
+CHANGE_PASSWORD = "Zněnit heslo";
+NOTIFICATIONS = "Oznámení";
+PRODUCT_DETAILS = "Detaily produktu";
+MY_BASKETS = "Moje košíky";
+BUY_CREDITS =  "Zakoupit kredity";
+PAYMENT_CONFIRMATION =  "Potvrzení platby";
+
+MY_CART = "Můj košík";
+
+
+
+// MARK: - Alert Message
+ENTER_YOUR_NAME = "Zadejte prosím své jméno";
+ENTER_YOUR_EMAIL = "Zadejte prosím e-mailovou adresu";
+ENTER_CORRECT_EMAIL ="Neplatné ID e-mailu";
+ENTER_PASSWORD = "Prosím vložte heslo.";
+ENTER_YOUR_MOBILE = "Zadejte své mobilní číslo";
+ENTER_YOUR_PASSWORD = "Prosím zadejte své heslo";
+ENTER_NEW_PASSWORD = "Zadejte prosím své nové heslo";
+ENTER_CONFIRM_PASSWORD = "Zadejte prosím své potvrzovací heslo";
+ENTER_CORRECT_PASSWORD = "Heslo (alespoň 8 znaků";
+ENTER_CORRECT_CONFIR_PASSWORD = "Potvrďte heslo alespoň 8 znaků";
+ENTER_CORRECT_NEW_PASSWORD = "Nové heslo alespoň 8 znaků";
+ENTER_CORRECT_NEW_PASSWORD = "Neplatné nové heslo";
+PASSWORD_NOT_MATCH = "Heslo a potvrzení hesla by měly být stejné";
+NEW_PASSWORD_NOT_MATCH = "Heslo není stejné";
+INVALID_CREDENTIAL = "Neplatné pověření";
+IMAGE_UPLOAD_SUCCESSFULLY = "Nahrání obrázku proběhlo úspěšně";
+The_mobile_number_has_already_been_taken = "Mobilní číslo již bylo obsazeno";
+You_don_have_enough_credit      =   "Nemáte dostatečný kredit k zobrazení ceny. Kliknutím na OK zakoupíte kredity.";
+ALERT           =       "Upozornění";
+
+
+
+// MARK: - Placeholder Text
+ENTER_NEW_PASSWORD = "Zadejte nové heslo";
+CREATE_NEW_PASSWORD = "Vytvořit nové  heslo";
+
+
+//LOGIN
+ENTER_EMAIL_ID = "Zadej svoji emailovou adresu";
+ENTER_PASSWORD_HERE = "Zde zadejte heslo";
+
+
+
+//PERSONAL DETAIL
+ENTER_FULL_NAME    =    "Zadejte celé jméno";
+ENTER_MOBILE_NUMBER     =   "Vložit mobilní číslo";
+ENTER_CONFIRM_PASSWORD_HERE     =   "Zde zadejte Potvrzení hesla";
+ENTER_PHONE_NUMBER  = "Vložte telefonní číslo";
+ENTER_OLD_PASSWORD  =  "Zadejte staré heslo";
+ENTER_BASKET_NAME = "Zadejte jméno Baskst";
+Please_enter_basket_name  = "Zadejte prosím název košíku!";
+
+
+//MARK: - KSTRING
+
+
+//LOGIN
+ENGLISH                                         =   "Angličtina";
+CZECH                                           =   "Čeština";
+GERMAN                                          =   "Němčina";
+LOGIN_ACCOUNT                                   =   "Přihlášení k účtu";
+EMAIL_ADDRESS                                   =   "Emailová adresa";
+PASSWORD                                        =   "Heslo";
+SELECT_LANGUAGE                                 =   "Vyberte jazyk";
+OR_CONTINUE_WITH                                =   "Nebo pokračujte pomocí";
+FORGOT_PASSWORD                                 =   "Zapomenuté heslo";
+LOGIN                                           =   "Přihlásit se";
+DONT_HAVE_ACCOUNT                               =   "Nemáte účet?";
+REGISTER_ACCOUNT                                =   "Zaregistrovat účet";
+
+//SIGNUP
+I_ACCEPT_ALL_THE                                =   "Přijímám všechny";
+TERMS_CONDITION                                 =   "Podmínky a pravidla";
+REGISTER                                        =   "Registrace";
+ALREADY_ACCOUNT                                 =   "Už máte účet";
+
+
+//PERSONAL DETAILS
+PERSONAL_DETAILS                                =   "Osobní údaje";
+FULL_NAME                                       =   "Celé jméno";
+MOBILE_NUMBER                                   =   "Číslo mobilního telefonu";
+AT_LEAST_CHARACTERS                             =   "Alespoň 8 znaků";
+CONFIRM_PASSWORD                                =   "Potvrdit heslo";
+
+//VERIFICATION
+VERIFICATION                                    =   "Ověření";
+DONE                                            =   "hotovo";
+VERIFICATION_STATUS                             =   "Ověřovací odkaz byl zaslán na Vaši e-mailovou adrsu. Kliknutím nad odkaz ověříte svůj účet.";
+
+//RESET PASSWORD
+RESET_PASSWORD                                  =   "Obnovit heslo";
+BACK_TO_LOGIN                                   =   "Zpět na přihlášení";
+RESET_PASSWORD_STATUS                           =   "Na Vaši emailovou adresu byl zaslán odkaz pro obnovení hesla.";
+
+//FORGOT PASSWORD
+FORGOT_PASSWORD_STATUS                          =   "Na Vaši emailovou adresu Vám zašleme odkaz pro obnovéní hesla.";
+SEND_LINK                                       =   "Odeslat odkaz";
+
+//HOME
+PGM_MARKET_PRICES                               =   "PGM tržní cena";
+AVAILABLE_CREDITS                               =   "Dostupné kredity";
+BUY_CREDIT                                      =   "Nákup  kreditů";
+SEARCH_YOUR_REFERENCES                          =   "Zadejte číslo katalyzátoru";
+ENTER_CATALYST_NUMBER                           =   "Vyhledejte podle čísla na katalyzátoru.";
+SELECT_BRAND                                    =   "Vyberte značku";
+SELECT_TYPE                                     =   "Vyber typ";
+FROM                                            =   "třídění";
+SEARCH                                          =   "Vyhledat";
+MOST_POPULAR_CATALYST                           =   "Nejoblíbenější katalyzátory";
+SELECT_FROM                                     =   "Vyberte z";
+BRANDS                                          =   "Značek";
+TYPE                                            =   "Typ";
+SELECT_REFERENCE                                =   "Například: GM 28";
+VIEW_DETAIL                                     =   "Zobrazení detailu";
+ALL                                             =   "Snadard";
+OUR_CATALOG                                     =   "Náš katalog";
+
+
+//BUY CREDIT
+PROCEED_TO_PURCHASE                             =   "Přejít k nákupu";
+SELECT_PLAN_PURCHASE                            =   "Vyberte typ nákupu";
+NO_OF_CREDIT                                    =   "Počet kreditů";
+SELECTED_PLAN                                   =   "Vybraný plán";
+PAYMENT_DETAILS                                 =   "Podrobnosti o platbě";
+PRICE_OF_CREDITS                                =   "Cena kreditů";
+TOTAL                                           =   "Celkem";
+CONTINUE_TO_PAY                                 =   "Pokračovat k platbě";
+CREDIT_SPACE                                    =   " kreditu";
+CREDIT                                          =   "kreditu";
+
+//PRODUCT DETAILS
+PRICE                                           =   "Cena";
+VIEW_PRICE                                      =   "Zobrazit cenu";
+SELECT_QUANTITY                                 =   "Vyberte množství";
+BRAND_NAME                                      =   "Značka";
+PRODUCT_TYPE                                    =   "Typ katalyzátoru";
+REFERENCE                                       =   "Číslo katalyzátoru";
+PRODUCT_DESCRIPTION                             =   "Popis produktu";
+CONTAIN_METAL                                   =   "Obahuje kovy";
+ADD_TO_CART                                     =   "Přidat do košíku";
+
+
+//SETTING
+LOGOUT                                          =   "Odhlásit se";
+TAP_TO_DETAIL                                   =   "Klepněte na detail ";
+TAP_TO_CHANGE_LANGUAGE                          =   "Klepněte pro změnu jazyka";
+
+
+
+//CHANGE PASSWORD
+OLD_PASSWORD                                    =   "Staré heslo";
+CREATE_NEW_PASSWORD                             =   "Vytvořit nové  heslo";
+UPDATE_PASSWORD                                 =   "Aktualizovat heslo";
+NOTIFICATION                                    =   "Oznámení";
+CHANGE_PASSWORD                                 =   "Zněnit heslo";
+TURN_OFF_PUSH_NOTIFICATION                      =   "Vypnutí vyskakujícího ozámení";
+TAP_TO_CHANGE_PASSWORD                          =   "Klikněte pro změnu hesla";
+
+//PROFILE
+TAP_TO_EDIT                                     =   "Klepněte pro úpravu";
+ACCOUNT_DETAIL                                  =   "Detail účtu";
+PHONE_NUMBER                                    =   "Telefonní číslo";
+SAVE_CHANGE                                     =   "Uložit změny";
+
+//BASKET
+AVAILABLE_BASKET                                =   "Dostupné položky ve Vašem košíku";
+CREATE_NEW_BASKET                               =   "Vytvořit nový košík";
+ALL_BASKET                                      =   "Zobrazit všechny košíky";
+PRICE_BREAKUP                                   =   "Cenový přehled";
+SAVE                                            =   "Uložit";
+PIECE                                           =   " Kusů";
+DATA_NOT_FOUND                                  =   "Data nenalezena";
+
+
+//CONTACT US
+COPIED_TO_CLIPBOARD                             =   "Zkopírováno do schránky";
+COMPANY_NUMBER                                  =   "Číslo společnosti";
+COMPANY_ADDRESS                                 =   "adresa společnosti";
+WEBSITE_LINK                                    =   "Odkaz na webovou stránku";
+EMAIL_ID                                        =   "ID e-mailu";
+ARE_YOU_SURE_TO_LOGOUT                          =   "Opravdu se chcete odhlásit?";
+YES_ITS_CORRECT                                 =   "Ano, chci se odhlásit";
+
+//BASKET
+BASKET_NAME                                     =   "Název košíku";
+PLEASE_SELECT_CARD                              =   "Vyberte prosím kartu";
+
+
+//ALERT RESPONSE
+email_available                                 =   "Dostupný e-mail";
+This_email_id_already_exists                    =   "Tento email již existuje";
+Your_verification_process_is_pending            =   "Váš ověřovací proces probíhá";
+Verified                                        =   "Ověřeno";
+Not_verified                                    =   "Neověřeno";
+Profile_completed_successfully                  =   "Profil byl úspěšně dokončen.";
+Profile_completed_successfully_SocialRegister   =   "Profil byl úspěšně dokončen.";
+Profile_updated_successfully                    =   "Profil byl úspěšně aktualizován.";
+Mobile_number_available                         =   "Mobilní číslo je k dipozici.";
+Unauthenticated                                 =   "Neověřeno.";
+Unauthorised                                    =   "Neautorizováno";
+This_mobile_number_already_exists               =   "TToto mobilní číslo již existuje";
+User_login_successfully                         =   "Přihlášení uživatele proběhlo úspěšně";
+Notification_status_updated_successfully        =   "Stav oznámení úspěšně aktualizován.";
+Password_updated_successfully                   =   "Heslo bylo úspěšně aktualizováno.";
+Logout_successfully                             =   "Odhlášení proběhlo úspěšně.";
+User_detail_retrieved_successfully              =   "Detail uživatele načten úspěšně.";
+Catalyst_detail_retrieved_successfully          =   "Detail katalyzátoru načten úspěšně.";
+Catalyst_retrieved_successfully                 =   "Katalyzátor načten úspěšně";
+Basket_fetched_successfully                     =   "Košík úspěšně vytvořen";
+Added_in_cart_successfully                      =   "Úspěšně přidáno do košíku";
+Cart_item_fetched_successfully                  =   "Seznam košíku načten úspěšně";
+Basket_created_successfully                     =   "Košík úspěšně vytvořen";
+Item_removed_successfully                       =   "Položka úspěšně odstraněna";
+Cart_updated_successfully                       =   "Košík úspěšně aktualizován";
+Updated_successfully                            =   "Úspěšně aktualizováno";
+Metal_Price_feteched_successfully               =   "Cena kovu úspěšně načtena";
+Basket_Removed_Successfully                     =   "Košík úspěšně odstraněn";
+Credit_retrieved_successfully                   =   "Kredit úspěšně načten.";
+Credit_purchased_successfully                   =   "Kredit úspěšně zakoupen.";
+New_user                                        =   "Nový uživatel";
+Catalyst_prices_retrieved_successfully          =   "Ceny katalyzátorů úspěně načteny.";
+The_mobile_has_already_been_taken               =   "Mobil je již odebrán.";
+Notification_list_retrieved_successfully        =   "Seznam oznámení byl úspěšně načten";
+Basket_PDF_successfully                         =   "Košík PDF úspěšně";
+Email_send_successfully                         =   "E-mail byl úspěšně odeslán";
+Reset_Password_link_has_been_sent_to_your_email_id          =   "Odkaz pro obnovení hesla byl odeslán na váš e-mail!";
+Verification_link_has_been_sent_on_your_email_address       =   "Na Vaši e-mailovou adresu byl odeslán ověřovací odkaz.";
+The_new_password_and_confirm_password_must_match            =   "Nové heslo a potvrzení hesla se musí shodovat.";
+Please_complete_your_profile_your_profile_is_not_complete   =   "Prosím, doplňte svůj profil, Váš profil není úplný.";
+
+
+
+FROM_THE_CHEAPEST                               =   "od nejlevnějšího";
+FROM_THE_HIGHEST                                =   "od nejvyšší ceny";

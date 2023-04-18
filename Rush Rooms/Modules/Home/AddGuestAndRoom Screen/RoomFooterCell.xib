@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoomFooterCell" customModule="Rush_Rooms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-0B-Xp5">
+                    <rect key="frame" x="0.0" y="0.0" width="535" height="73"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-3n-kBb">
+                            <rect key="frame" x="20" y="6" width="495" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9u-9Y-n5p">
+                                    <rect key="frame" x="0.0" y="0.0" width="242.66666666666666" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Add Room">
+                                        <color key="titleColor" name="BlackCustomColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHP-3b-8cK">
+                                    <rect key="frame" x="252.66666666666669" y="0.0" width="242.33333333333331" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Remove Room">
+                                        <color key="titleColor" systemColor="systemRedColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="tDi-AZ-eov"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cPu-3n-kBb" secondAttribute="trailing" constant="20" id="M2H-iD-3RN"/>
+                        <constraint firstItem="cPu-3n-kBb" firstAttribute="top" secondItem="hLs-0B-Xp5" secondAttribute="top" constant="6" id="WbU-uI-bBe"/>
+                        <constraint firstItem="cPu-3n-kBb" firstAttribute="leading" secondItem="hLs-0B-Xp5" secondAttribute="leading" constant="20" id="e5k-x5-egb"/>
+                        <constraint firstAttribute="bottom" secondItem="cPu-3n-kBb" secondAttribute="bottom" constant="20" id="hiV-HI-pdp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hLs-0B-Xp5" secondAttribute="trailing" id="Byu-2M-bnn"/>
+                <constraint firstItem="hLs-0B-Xp5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EQs-8d-aZM"/>
+                <constraint firstItem="hLs-0B-Xp5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aMT-Ga-rQK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hLs-0B-Xp5" secondAttribute="bottom" id="uGJ-J7-tzS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="RoomFooterVw" destination="hLs-0B-Xp5" id="M6K-Nw-GbC"/>
+                <outlet property="addRoomBtn" destination="w9u-9Y-n5p" id="F2d-zS-bTl"/>
+                <outlet property="removeRoomBtn" destination="oHP-3b-8cK" id="r69-Da-0r4"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="224"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlackCustomColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

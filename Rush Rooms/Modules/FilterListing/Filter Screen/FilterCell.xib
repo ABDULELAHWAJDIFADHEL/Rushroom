@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterCell" rowHeight="38" id="KGk-i7-Jjw" customClass="FilterCell" customModule="Rush_Rooms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="38"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-Cc-BdQ">
+                        <rect key="frame" x="24" y="0.0" width="421" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets Allowed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9E-QP-I0s">
+                                <rect key="frame" x="16" y="8" width="83" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Gac-X8-6sC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="LightGrayCustomColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleCheckBox" translatesAutoresizingMaskIntoConstraints="NO" id="cDD-f5-Rht">
+                                <rect key="frame" x="382" y="6" width="24" height="24"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upn-k6-ndO">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cDD-f5-Rht" secondAttribute="trailing" constant="15" id="1Dt-fU-CF6"/>
+                            <constraint firstItem="p9E-QP-I0s" firstAttribute="leading" secondItem="MlG-Cc-BdQ" secondAttribute="leading" constant="16" id="KDP-d1-zFL"/>
+                            <constraint firstItem="Upn-k6-ndO" firstAttribute="top" secondItem="MlG-Cc-BdQ" secondAttribute="top" id="QdI-bi-4uS"/>
+                            <constraint firstItem="p9E-QP-I0s" firstAttribute="top" secondItem="MlG-Cc-BdQ" secondAttribute="top" constant="8" id="SfK-bb-9dz"/>
+                            <constraint firstAttribute="bottom" secondItem="p9E-QP-I0s" secondAttribute="bottom" constant="8" id="V3g-SO-P1u"/>
+                            <constraint firstAttribute="bottom" secondItem="Upn-k6-ndO" secondAttribute="bottom" id="aKs-fj-NqO"/>
+                            <constraint firstAttribute="trailing" secondItem="Upn-k6-ndO" secondAttribute="trailing" id="bzw-rP-19o"/>
+                            <constraint firstItem="Upn-k6-ndO" firstAttribute="leading" secondItem="MlG-Cc-BdQ" secondAttribute="leading" id="hrv-Zl-s0n"/>
+                            <constraint firstItem="cDD-f5-Rht" firstAttribute="centerY" secondItem="p9E-QP-I0s" secondAttribute="centerY" id="xpD-El-h60"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="BackgroundCustomColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MlG-Cc-BdQ" secondAttribute="trailing" constant="24" id="5fc-aR-Dhs"/>
+                    <constraint firstItem="MlG-Cc-BdQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="6i1-hM-mIy"/>
+                    <constraint firstAttribute="bottom" secondItem="MlG-Cc-BdQ" secondAttribute="bottom" id="NQe-h2-MlO"/>
+                    <constraint firstItem="MlG-Cc-BdQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="woY-3h-nhJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="BackgroundCustomColor"/>
+            <connections>
+                <outlet property="checkBox" destination="cDD-f5-Rht" id="OHv-Ps-pFD"/>
+                <outlet property="filterBtn" destination="Upn-k6-ndO" id="4YB-da-OoZ"/>
+                <outlet property="filterLbl" destination="p9E-QP-I0s" id="zBI-Ya-73F"/>
+                <outlet property="filterVw" destination="MlG-Cc-BdQ" id="I6Y-wZ-qWh"/>
+            </connections>
+            <point key="canvasLocation" x="41.984732824427482" y="5.6338028169014089"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rectangleCheckBox" width="24" height="24"/>
+        <namedColor name="BackgroundCustomColor">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayCustomColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
